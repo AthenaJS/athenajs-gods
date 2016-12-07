@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3DDF252-1201-4F64-AAEF-52FC7398E673}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodsViewer</RootNamespace>
+    <AssemblyName>Gods Viewer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\Gods.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alfils\Alfils05_Switch.cs" />
+    <Compile Include="Alfils\Alfils05_Switches.cs" />
+    <Compile Include="Alfils\Alfils02_Event.cs" />
+    <Compile Include="Alfils\Alfils02_Events.cs" />
+    <Compile Include="Alfils\Alfils01_FlyingWave.cs" />
+    <Compile Include="Alfils\Alfils01_FlyingWaves.cs" />
+    <Compile Include="Alfils\Alfils03_WalkingWave.cs" />
+    <Compile Include="Alfils\Alfils03_WalkingWaves.cs" />
+    <Compile Include="Alfils\Alfils06_Teleport.cs" />
+    <Compile Include="Alfils\Alfils06_Teleports.cs" />
+    <Compile Include="Alfils\Alfils04a_IntelFlyingWave.cs" />
+    <Compile Include="Alfils\Alfils04a_IntelFlyingWaves.cs" />
+    <Compile Include="Alfils\Alfils04b_IntelWalkingWave.cs" />
+    <Compile Include="Alfils\Alfils04b_IntelWalkingWaves.cs" />
+    <Compile Include="Alfils\IAlfils.cs" />
+    <Compile Include="BoxHelper.cs" />
+    <None Include="_BoxHelper.cs" />
+    <Compile Include="Map\MapPuzzle.cs" />
+    <Compile Include="DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\ObjectiveLocation.cs" />
+    <Compile Include="Others\ItemShared.cs" />
+    <Compile Include="Others\EnemyInfo.cs" />
+    <Compile Include="Others\EnemiesInfo.cs" />
+    <Compile Include="Others\FlyingPath.cs" />
+    <Compile Include="Others\FlyingPaths.cs" />
+    <Compile Include="Others\WeaponInfo.cs" />
+    <Compile Include="Others\WeaponsInfo.cs" />
+    <Compile Include="Alfils\Alfils08_MovingBlock.cs" />
+    <Compile Include="Alfils\Alfils08_MovingBlocks.cs" />
+    <Compile Include="Alfils\Alfils07_Trapdoor.cs" />
+    <Compile Include="Alfils\Alfils07_Trapdoors.cs" />
+    <Compile Include="Alfils\Alfils09_Hint.cs" />
+    <Compile Include="Alfils\Alfils09_Hints.cs" />
+    <Compile Include="Map\MapItem.cs" />
+    <Compile Include="Others\ObjectsInfo.cs" />
+    <Compile Include="Others\ObjectInfo.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="Map\Map.cs" />
+    <Compile Include="Others\SpriteData.cs" />
+    <Compile Include="Others\SpritesData.cs" />
+    <Compile Include="ExtensionByte.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GodsFS.cs" />
+    <Compile Include="Palette.cs" />
+    <Compile Include="Pi1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\04 Level 1.dmp" />
+    <None Include="Resources\Gods %281991%29%28Renegade%29%28Disk 1 of 2%29.adf" />
+    <None Include="Resources\Gods %281991%29%28Renegade%29%28Disk 2 of 2%29.adf" />
+    <None Include="Resources\Gods %28Disk 1 of 2%29 - Track 00 filled.st" />
+    <None Include="Resources\Gods %28Disk 2 of 2%29.st" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite.cs" />
+    <Compile Include="UnpackerC.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Fonts\04B_11__.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\Pic0 1.110.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Amiga - Level 1.dmp" />
+    <None Include="Resources\Gods.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
