@@ -62,29 +62,28 @@ class SceneIntro extends Scene {
 
         EM.clearEvents();
 
-        EM.installKeyCallback('ENTER', 'up', function () {
-            that.animate('Fade', {
+        EM.installKeyCallback('ENTER', 'up', () => {
+            this.animate('Fade', {
                 startValue: 1,
                 endValue: 0,
                 duration: 1000
-            }).done(function () {
+            }).then(() => {
                 console.log('fade ended');
-                that.notify('game:gotoMenu');
+                this.notify('game:gotoMenu');
             });
         });
 
         AM.play('restart');
 
-        that.animate('Fade', {
+        this.animate('Fade', {
             startValue: 0,
             endValue: 1,
             duration: 1000
-        }).done(function () {
+        }).then(() => {
             console.log('fade ended');
         });
 
         this.addObject(this.titleScreen);
-
         // TODO: fadeIn
     }
 

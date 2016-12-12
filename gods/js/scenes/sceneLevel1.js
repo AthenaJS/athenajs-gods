@@ -203,7 +203,7 @@ class godsLevel1 extends Scene {
             this.animate('Fade', {
                 startValue: 1,
                 endValue: 0
-            }).done(function () {
+            }).then(() => {
                 this.notify('game:exitLevel');
             });
         });
