@@ -43,11 +43,10 @@ $(function () {
     window.Gods = new GodsClass({
         debug: false,
         name: 'Gods',
-        target: $('.main'),
-        fpsElt: $('.fps')[0],
+        target: '.main',
         showFps: true,
-        width: $('.main').width(),
-        height: $('.main').height(),
+        width: 1024,
+        height: 768,
         sound: true
     });
 
