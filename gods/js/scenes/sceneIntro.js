@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } from 'AthenaJS';
+import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } from 'athenajs';
 // import Scene from 'Scene/Scene';
 // import Text from 'Object/Text';
 // import Sprite from 'Object/Sprite';

@@ -1,4 +1,4 @@
-import { Scene, Pool, EventManager, ResourceManager as RM } from 'AthenaJS';
+import { Scene, Pool, EventManager, ResourceManager as RM } from 'athenajs';
 /*
 import Scene from 'Scene/Scene';
 import Pool from 'Core/Pool';

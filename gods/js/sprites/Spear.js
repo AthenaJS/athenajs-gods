@@ -1,4 +1,4 @@
-import { Sprite, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, ResourceManager as RM } from 'athenajs';
 
 		class Spear extends Sprite{
 			constructor(options) {

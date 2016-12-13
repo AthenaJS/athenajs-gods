@@ -1,4 +1,4 @@
-import { Sprite, AudioManager as AM, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 		class Weapon extends Sprite{
 			constructor(options = {}) {
                 // options.data = $.extend(true, {

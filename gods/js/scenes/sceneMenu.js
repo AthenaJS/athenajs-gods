@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } from 'AthenaJS';
+import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } from 'athenajs';
 
 		class sceneMenu extends Scene{
       constructor() {

@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-import { Sprite, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, ResourceManager as RM } from 'athenajs';
 
 		class FlyingEnemy1 extends Sprite{
 			constructor(options = {}) {

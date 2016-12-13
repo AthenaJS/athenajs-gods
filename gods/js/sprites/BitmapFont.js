@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-import { BitmapText, ResourceManager as RM } from 'AthenaJS';
+import { BitmapText, ResourceManager as RM } from 'athenajs';
 
 class BitmapFont extends BitmapText {
 	constructor(type, options) {

@@ -1,4 +1,4 @@
-import { Map } from 'AthenaJS';
+import { Map } from 'athenajs';
     // here we only extend Map to override addObject and keep track of switch objects
     class GodsMap extends Map{
         constructor(options) {

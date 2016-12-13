@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-import { Sprite, AudioManager as AM, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 		class Enemy extends Sprite{
 			constructor(options) {

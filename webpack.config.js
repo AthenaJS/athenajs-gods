@@ -12,7 +12,8 @@ module.exports = {
         filename: "bundle.js",
         pathinfo: true
     },
-    devtool: 'source-map',
+    // devtool: 'cheap-module-eval-source-map',
+    devtool: 'eval',
     module: {
         loaders: [
             { test: /\.js$/, loader: 'babel-loader?presets[]=es2015', exclude: /node_modules|athenajs\.js/ }            
