@@ -101,7 +101,6 @@ class godsLevel1 extends Scene {
                 // },
 
                 // sound
-                /*
                 {
                     id: 'step_left',
                     type: 'audio',
@@ -166,7 +165,7 @@ class godsLevel1 extends Scene {
                     id: 'weapon_crash',
                     type: 'audio',
                     src: 'gods/audio/weapon_crash.wav'
-                }*/
+                }
             ]
         });
     }
