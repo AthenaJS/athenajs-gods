@@ -3,7 +3,7 @@ import { BitmapText, ResourceManager as RM } from 'athenajs';
 
 class BitmapFont extends BitmapText {
 	constructor(type, options) {
-		super(type, $.extend(options, {
+		super(type, Object.assign(options, {
 			offsetX: 34,
 			bmStartY: 36,
 			charWidth: 16,

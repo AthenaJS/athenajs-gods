@@ -3,7 +3,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 		class Enemy extends Sprite{
 			constructor(options) {
-				super('enemy1', $.extend(true, {
+				super('enemy1', Object.assign({
                     x: 600,
                     y: 159,
                     canCollide: false,
