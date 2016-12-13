@@ -136,15 +136,13 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
                     return;
                 }
 
-                var that = this;
-
                 if (options.data.fall || typeof options.data.fall === 'undefined') {
                     this.setBehavior('simplefall', {
                         gravity: .3,
                         vy: options.vy || 0,
-                        onEnd: jQuery.proxy(function() {
-                            that.moving = false;
-                        }, that),
+                        onEnd: () => {
+							this.moving = false;
+                        },
                         onGround: function() {
                             AM.play('bounce');
                         }

@@ -136,9 +136,9 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
                             that.dir = 'left';
                         }
                     },
-					onEnd: jQuery.proxy(function() {
-						that.moving = false;
-					}, that)
+					onEnd: () => {
+						this.moving = false;
+					}
 				});
 
                 this.currentMovement = '';

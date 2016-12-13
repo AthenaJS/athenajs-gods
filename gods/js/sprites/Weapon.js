@@ -230,9 +230,9 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 					vx: options.data.direction == 'left' ? -6 : 6,
 					vy: 0,
 					gravity: 0,
-					onVXChange: jQuery.proxy(function(vx) {
+					onVXChange: (vx) => {
                         this.destroy(true);
-					}, this)
+					}
 				});
 
                 this.running = true;

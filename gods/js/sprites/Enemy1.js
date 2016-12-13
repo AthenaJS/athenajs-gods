@@ -484,13 +484,13 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 					vx: this._settings.data.direction === 'Left' ? -this.speed : this.speed,
 					vy: 0,
 					gravity: 0,
-					onVXChange: jQuery.proxy(function(vx) {
+					onVXChange: (vx) => {
 						if (vx < 0) {
 							this.setAnimation('mainLoopLeft');
 						} else {
 							this.setAnimation('mainLoopRight');
 						}
-					}, this)
+					}
 				});
 			}
 			onCollision(sprite) {

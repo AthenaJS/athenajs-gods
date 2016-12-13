@@ -131,9 +131,9 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 				this.setBehavior('simplefall', {
 					gravity: 0.3,
-					onEnd: jQuery.proxy(function() {
-						that.moving = false;
-					}, that),
+					onEnd: () => {
+						this.moving = false;
+					},
 					onGround: function() {
 						AM.play('bounce');
 					}
