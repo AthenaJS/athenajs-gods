@@ -1,10 +1,10 @@
 /*jshint esversion: 6*/
-import { Sprite, NotificationManager as NM, AudioManager as AM, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, NotificationManager as NM, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 // TODO: extend Sprite to create our special gods sprites here
 class godsSprite extends Sprite {
 	constructor(options) {
-		super('gods', $.extend(true, {
+		super('gods', Object.assign(true, {
 			imageSrc: 'sprites',
 			pool: options.pool,
 			canCollide: true,

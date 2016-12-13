@@ -1,4 +1,4 @@
-import { Sprite, ResourceManager as RM, AudioManager as AM } from 'AthenaJS';
+import { Sprite, ResourceManager as RM, AudioManager as AM } from 'athenajs';
 /*
 import Sprite from 'Object/Sprite';
 import RM from 'Resource/ResourceManager';

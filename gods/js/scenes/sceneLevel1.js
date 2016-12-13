@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM, ResourceManager as RM } from 'AthenaJS';
+import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM, ResourceManager as RM } from 'athenajs';
 import GodsMap from 'maps/GodsMap';
 import sceneHud from 'scenes/sceneHud';
 

@@ -2,7 +2,7 @@ import sceneIntro from 'scenes/sceneIntro';
 import sceneLevel1 from 'scenes/sceneLevel1';
 import sceneMenu from 'scenes/sceneMenu';
 
-import { Game } from 'AthenaJS';
+import { Game } from 'athenajs';
 
 console.log('** game', Game);
 

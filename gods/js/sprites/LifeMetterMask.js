@@ -1,4 +1,4 @@
-import { Sprite, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, ResourceManager as RM } from 'athenajs';
 
 		class LifeMetterMask extends Sprite{
 			constructor(options = {}) {

@@ -1,7 +1,7 @@
-import { Sprite, AudioManager as AM, ResourceManager as RM } from 'AthenaJS';
+import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 		class Weapon extends Sprite{
 			constructor(options = {}) {
-                // options.data = $.extend(true, {
+                // options.data = Object.assign({
                 //     weaponType: 'knife',
                 //     direction: 'right'
                 // }, options.data);
@@ -14,7 +14,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'AthenaJS';
 						pool: options.pool,
 						canCollide: true,
 						collideGroup: 2,
-                        data: $.extend(true, {
+                        data: Object.assign({
                             weaponType: 'knife',
                             direction: 'right'
                         }, options.data),
@@ -211,7 +211,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'AthenaJS';
                     return;
                 }
 
-                options.data = $.extend(true, {
+                options.data = Object.assign({
                     weaponType: 'knife',
                     direction: 'right'
                 }, options.data);
