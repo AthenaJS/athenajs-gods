@@ -709,7 +709,7 @@ class godsSprite extends Sprite {
 				}, 700);
 			});
 
-			this.currentMap.addSprite(death);
+			this.currentMap.addObject(death);
 		} else {
 			AM.play('hit2');
 			// TODO: sprite should not collide for a few ms ?
@@ -771,7 +771,7 @@ class godsSprite extends Sprite {
 							direction: data.direction
 						}
 					});
-					this.currentMap.addSprite(weapon);
+					this.currentMap.addObject(weapon);
 					AM.play('weapon_throw');
 
 					result = true;
