@@ -77,7 +77,7 @@ import GodsMapEvent from './GodsMapEvent';
 		triggers: {
 
 		},
-		mapItemBlocks: {
+		windows: {
 
 		},
         sprites: [

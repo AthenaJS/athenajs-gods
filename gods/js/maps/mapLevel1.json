@@ -108,7 +108,7 @@
             "type": "cp"
         }
     },
-    "mapItemBlocks": {
+    "windows": {
         "0": {
             "displayed": false,
             "items": [{
