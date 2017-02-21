@@ -7,6 +7,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
                 // }, options.data);
 
                 // this.weaponType = options.data.weaponType;
+
 				super('knife', {
 						imageSrc: 'enemies',
 						x: options.x,
@@ -216,6 +217,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
                     direction: 'right'
                 }, options.data);
 
+
                 this.weaponType = options.data.weaponType;
                 this.animName = this.weaponType + '_' + options.data.direction;
 
@@ -234,6 +236,8 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
                         this.destroy(true);
 					}
 				});
+
+				this.setAnimation(this.animName);
 
                 this.running = true;
             }
@@ -263,7 +267,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
                 this.currentMovement = '';
                 // console.log('setting animation', this.animName);
-			    this.setAnimation(this.animName);
+			    // this.setAnimation(this.animName);
             }
 		};
 

@@ -15,7 +15,7 @@ class godsSprite extends Sprite {
 				carrying: [],
 				weapon: ''
 			},
-			behavior: 'player2',
+			behavior: 'player',
 			behaviorOptions: {
 				animations: {
 					climbUp: 'climb'
@@ -735,7 +735,7 @@ class godsSprite extends Sprite {
 			case 'enemy1':
 			case 'flying-enemy1':
 			case 'spearWood':
-				this.onDamage(sprite._settings.data.damage);
+				// this.onDamage(sprite._settings.data.damage);
 				// TODO: call sprite.destroy() method (to be implemented)
 				break;
 
