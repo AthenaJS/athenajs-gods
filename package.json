@@ -7,7 +7,7 @@
   "main": "dist/gods.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --watch",
     "build": "webpack --config webpack.production.config.js"
   },
   "devDependencies": {
