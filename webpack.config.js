@@ -12,22 +12,24 @@ module.exports = {
         filename: "bundle.js",
         pathinfo: true
     },
-    // devtool: 'cheap-module-eval-source-map',
     devtool: 'eval',
     module: {
-        loaders: [
-            { test: /\.js$/, loader: 'babel-loader?presets[]=es2015', exclude: /node_modules|athenajs\.js/ }            
+        rules: [
+            { test: /\.js$/, loader: 'babel-loader?presets[]=es2015', exclude: /node_modules|athenajs\.js/ }
         ]
     },
     devServer: {
-        address: '127.0.0.1',
+        host: '127.0.0.1',
         port: '8888',
         // inline hot-reload
         inline: true
     },
     resolve: {
-        modulesDirectories: ['node_modules'],
-        root: [path.resolve('./gods/js')]
+        modules: [
+            path.resolve('./gods/js'),
+            'node_modules'
+        ]
+
     },
     plugins: [
         new HtmlWebpackPlugin({
