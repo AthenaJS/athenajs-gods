@@ -46,6 +46,10 @@ module.exports = {
             template: 'index-wp.ejs',
             inject: 'body'
         }),
-        new WebpackNotifierPlugin({ alwaysNotify: true })
+        new WebpackNotifierPlugin({
+            alwaysNotify: true,
+            skipFirstNotification: true,
+            title: 'AthenaJS-Gods'
+        })
     ]
 };
