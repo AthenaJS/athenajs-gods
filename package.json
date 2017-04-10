@@ -17,6 +17,7 @@
     "happypack": "3.0.3",
     "html-webpack-plugin": "2.28.0",
     "imports-loader": "0.7.1",
+    "source-map-loader": "^0.2.1",
     "webpack": "2.3.3",
     "webpack-dev-server": "2.4.2",
     "webpack-notifier": "1.5.0"

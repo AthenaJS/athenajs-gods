@@ -12,10 +12,19 @@ module.exports = {
         filename: "bundle.js",
         pathinfo: true
     },
-    devtool: 'eval',
+    devtool: 'source-map',
     module: {
         rules: [
-            { test: /\.js$/, loader: 'babel-loader?presets[]=es2015', exclude: /node_modules|athenajs\.js/ }
+            {
+                test: /\.js$/,
+                loader: 'babel-loader?presets[]=es2015',
+                exclude: /node_modules|athenajs\.js/
+            },
+            {
+                test: /athenajs\.js$/,
+                use: ["source-map-loader"],
+                enforce: "pre"
+            }
         ]
     },
     devServer: {
