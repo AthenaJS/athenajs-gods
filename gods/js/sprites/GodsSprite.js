@@ -735,8 +735,8 @@ class godsSprite extends Sprite {
 			case 'enemy1':
 			case 'flying-enemy1':
 			case 'spearWood':
-				// this.onDamage(sprite._settings.data.damage);
 				// TODO: call sprite.destroy() method (to be implemented)
+				this.onDamage(sprite._settings.data.damage);
 				break;
 
 			case 'knife':

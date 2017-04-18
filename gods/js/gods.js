@@ -67,7 +67,7 @@ class GodsClass extends Game {
         const offsetX = event.offsetX > 0 ? event.offsetX : 0;
         const offsetY = event.offsetY > 0 ? event.offsetY : 0;
         const pos = map.getTilePos(offsetX, offsetY);
-        this.tileInspector.html(`${pos.x}, ${pos.y}`).css({
+        this.tileInspector.html(`${pos.x}, ${pos.y}<br />Type: ${map.tileTypes[pos.x+pos.y * map.numCols]}`).css({
             left: (pos.x * map.tileWidth) + 'px',
             top: (pos.y * map.tileHeight) + 'px'
         });
