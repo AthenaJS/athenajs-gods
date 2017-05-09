@@ -1,10 +1,10 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } from 'athenajs';
+import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
 // import Scene from 'Scene/Scene';
 // import Text from 'Object/Text';
 // import Sprite from 'Object/Sprite';
 // import Menu from 'Object/Menu';
 // import AM from 'Audio/AudioManager';
-// import EM from 'Event/EventManager';
+// import EM from 'Input/InputManager';
 
 console.log(Scene, Text, Sprite, Menu, AM, EM);
 
@@ -60,9 +60,9 @@ class SceneIntro extends Scene {
 
         var that = this;
 
-        EM.clearEvents();
+        Input.clearEvents();
 
-        EM.installKeyCallback('ENTER', 'up', () => {
+        Input.installKeyCallback('ENTER', 'up', () => {
             this.animate('Fade', {
                 startValue: 1,
                 endValue: 0,
@@ -88,7 +88,7 @@ class SceneIntro extends Scene {
     }
 
     stop() {
-        EM.clearEvents();
+        Input.clearEvents();
         super.stop();
     }
 

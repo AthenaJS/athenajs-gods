@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } from 'athenajs';
+import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
 
 		class sceneMenu extends Scene{
       constructor() {
@@ -45,14 +45,14 @@ import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } fro
 
         var that = this;
 
-        EM.clearEvents();
+        Input.clearEvents();
 
-        EM.installKeyCallback('DOWN', 'up', function() {
+        Input.installKeyCallback('DOWN', 'up', function() {
             console.log('down');
             that.menuObject.nextItem();
         });
 
-        EM.installKeyCallback('ENTER', 'up', function() {
+        Input.installKeyCallback('ENTER', 'up', function() {
             console.log('selectedMenu', that.menuObject.getSelectedItemIndex());
             if (that.menuObject.getSelectedItemIndex() === 0) {
                 that.notify('game:startGame');
@@ -66,7 +66,7 @@ import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM } fro
         this.addObject(this.menuObject);
       }
       stop() {
-				EM.clearEvents();
+				Input.clearEvents();
         super.stop();
       }
       

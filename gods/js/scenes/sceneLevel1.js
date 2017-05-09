@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, EventManager as EM, ResourceManager as RM } from 'athenajs';
+import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input, ResourceManager as RM } from 'athenajs';
 import GodsMap from 'maps/GodsMap';
 import sceneHud from 'scenes/sceneHud';
 
@@ -195,10 +195,10 @@ class godsLevel1 extends Scene {
         super.unpause();
     }
     start(doNotResetMap) {
-        EM.clearEvents();
+        Input.clearEvents();
 
-        EM.installKeyCallback('ESCAPE', 'up', () => {
-            EM.clearEvents();
+        Input.installKeyCallback('ESCAPE', 'up', () => {
+            Input.clearEvents();
 
             this.animate('Fade', {
                 startValue: 1,
@@ -265,7 +265,7 @@ class godsLevel1 extends Scene {
     }
 
     stop() {
-        EM.clearEvents();
+        Input.clearEvents();
 
         super.stop();
     }

@@ -1,8 +1,7 @@
-import { Scene, Pool, EventManager, ResourceManager as RM } from 'athenajs';
+import { Scene, Pool, ResourceManager as RM } from 'athenajs';
 /*
 import Scene from 'Scene/Scene';
 import Pool from 'Core/Pool';
-import EventManager from 'Event/EventManager';
 import ResourceManager from 'Resource/ResourceManager';
 */
 
@@ -131,7 +130,7 @@ class GodsHudScene extends Scene {
     }
     stop() {
         console.log('stop');
-        /*                EM.clearEvents();*/
+        /*                Input.clearEvents();*/
 
         super.stop();
     }
