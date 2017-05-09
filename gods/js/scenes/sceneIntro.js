@@ -4,9 +4,9 @@ import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input } 
 // import Sprite from 'Object/Sprite';
 // import Menu from 'Object/Menu';
 // import AM from 'Audio/AudioManager';
-// import EM from 'Input/InputManager';
+// import Input from 'Input/InputManager';
 
-console.log(Scene, Text, Sprite, Menu, AM, EM);
+console.log(Scene, Text, Sprite, Menu, AM, Input);
 
 class SceneIntro extends Scene {
     constructor() {
