@@ -190,6 +190,6 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
             }
         };
 
-		RM.loadScript2('SmallItem', SmallItem);
+		RM.registerScript('SmallItem', SmallItem);
 
 		export default SmallItem;

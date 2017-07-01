@@ -146,6 +146,6 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
             }
 		}
 
-		RM.loadScript2('Gem', Gem);
+		RM.registerScript('Gem', Gem);
 
 		export default Gem;

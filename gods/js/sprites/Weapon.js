@@ -271,6 +271,6 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
             }
 		};
 
-		RM.loadScript2('Weapon', Weapon);
+		RM.registerScript('Weapon', Weapon);
 
 		export default Weapon;

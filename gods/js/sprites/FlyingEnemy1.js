@@ -148,6 +148,6 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
             }
 		}
 
-		RM.loadScript2('FlyingEnemy1', FlyingEnemy1);
+		RM.registerScript('FlyingEnemy1', FlyingEnemy1);
 
 		export default FlyingEnemy1;

@@ -783,6 +783,6 @@ class godsSprite extends Sprite {
 	}
 }
 
-RM.loadScript2('GodsSprite', godsSprite);
+RM.registerScript('GodsSprite', godsSprite);
 
 export default godsSprite;

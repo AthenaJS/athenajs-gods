@@ -45,6 +45,6 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
             }
 		}
 
-		RM.loadScript2('LifeMetterMask', LifeMetterMask);
+		RM.registerScript('LifeMetterMask', LifeMetterMask);
 
 		export default LifeMetterMask;

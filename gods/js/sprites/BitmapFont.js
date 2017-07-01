@@ -35,6 +35,6 @@ class BitmapFont extends BitmapText {
 	}
 }
 
-RM.loadScript2('BitmapFont', BitmapFont);
+RM.registerScript('BitmapFont', BitmapFont);
 
 export default BitmapFont;

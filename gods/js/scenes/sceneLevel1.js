@@ -39,11 +39,12 @@ class godsLevel1 extends Scene {
                 },
 
                 // objects
+                /*
                 {
                     id: 'Gem',
                     type: 'script',
                     src: 'sprites/Gem'
-                },/* {
+                },{
                     id: 'spear',
                     type: 'script',
                     src: 'gods/js/sprites/Spear.js',

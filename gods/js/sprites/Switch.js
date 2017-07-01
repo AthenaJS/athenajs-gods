@@ -81,6 +81,6 @@ import AM from 'Audio/AudioManager';
 			}
 		};
 
-		RM.loadScript2('Switch', Switch);
+		RM.registerScript('Switch', Switch);
 
 		export default Switch;
