@@ -15,7 +15,7 @@ Although incomplete, this demo already makes use of and validates the following 
  - map vertical & horizontal scrolling
  - png-based sprites and bitmap fonts
  - sprites collision detection
- - special effects like SNES-like mosaic & sprite rotation
+ - special effects like [SNES-like mosaic](https://github.com/warpdesign/jquery-mosaic) & sprite rotation
  - game scenes
 
 ## Demo
