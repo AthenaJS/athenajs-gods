@@ -35,7 +35,7 @@ class godsLevel1 extends Scene {
                 {
                     id: 'mapLevel1',
                     type: 'map',
-                    src: 'gods/js/maps/mapLevel1.json'
+                    src: 'gods/maps/mapLevel1.json'
                 },
 
                 // objects
