@@ -11,7 +11,7 @@
     "name": "level1",
     "startX": 125,
     "startY": 448,
-    "dataUrl": "gods/data/mapLevel1.bin",
+    "dataUrl": "gods/maps/data/mapLevel1.bin",
     "map": null,
     "objects": null,
     "triggers": {
