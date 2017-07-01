@@ -150,7 +150,7 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
             }
 		}
 
-		RM.loadScript2('DeathExplosion', DeathExplosion);
+		RM.registerScript('DeathExplosion', DeathExplosion);
 
 		export default DeathExplosion;
 

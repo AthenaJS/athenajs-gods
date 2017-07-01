@@ -39,6 +39,6 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
             }
 		};
 
-		RM.loadScript2('MovingPlatform', MovingPlatform);
+		RM.registerScript('MovingPlatform', MovingPlatform);
 
 		export default MovingPlatform;

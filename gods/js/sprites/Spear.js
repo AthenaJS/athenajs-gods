@@ -95,6 +95,6 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
             }
 		};
 
-		RM.loadScript2('Spear', Spear);
+		RM.registerScript('Spear', Spear);
 
 		export default Spear;

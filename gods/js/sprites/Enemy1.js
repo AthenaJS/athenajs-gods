@@ -513,6 +513,6 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 			}
 		}
 
-        RM.loadScript2('Enemy1', Enemy);
+        RM.registerScript('Enemy1', Enemy);
 
 		export default Enemy;

@@ -62,16 +62,10 @@ class SceneIntro extends Scene {
 
         Input.clearEvents();
 
+        /*
         Input.installKeyCallback('ENTER', 'up', () => {
-            this.animate('Fade', {
-                startValue: 1,
-                endValue: 0,
-                duration: 1000
-            }).then(() => {
-                console.log('fade ended');
-                this.notify('game:gotoMenu');
-            });
         });
+        */
 
         AM.play('restart');
 
@@ -80,11 +74,19 @@ class SceneIntro extends Scene {
             endValue: 1,
             duration: 1000
         }).then(() => {
-            console.log('fade ended');
+            setTimeout(()=> {
+                this.animate('Fade', {
+                    startValue: 1,
+                    endValue: 0,
+                    duration: 1000
+                }).then(() => {
+                    console.log('fade ended');
+                    this.notify('game:startGame');
+                });                
+            }, 2000);
         });
 
         this.addObject(this.titleScreen);
-        // TODO: fadeIn
     }
 
     stop() {
@@ -95,17 +97,6 @@ class SceneIntro extends Scene {
     debug() {}
     run() {
         //                var rotate = this.menuObject.getAngle();
-
-        // move
-        // move enemies
-
-        // move special objects: traps, treasures, weapons,...
-
-        // Move sprites (on Map ?!);
-        // scrolling
-        //                this.map.move();
-        //                rotate++;
-        //                this.menuObject.setAngle(rotate > 360 ? 0 : rotate);
         super.run();
     }
 };

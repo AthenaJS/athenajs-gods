@@ -71,6 +71,6 @@ import AM from 'Audio/AudioManager';
             }
 		};
 
-		RM.loadScript2('SpearWood', SpearWood);
+		RM.registerScript('SpearWood', SpearWood);
 
 		export default SpearWood;

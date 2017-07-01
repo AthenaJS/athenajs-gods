@@ -86,6 +86,6 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
             }
 		}
 
-		RM.loadScript2('EnemyExplosion', EnemyExplosion);
+		RM.registerScript('EnemyExplosion', EnemyExplosion);
 
 		export default EnemyExplosion;
