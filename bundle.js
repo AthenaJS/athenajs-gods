@@ -150,7 +150,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 44);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1410,7 +1410,7 @@ var GfxObject = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Binary_Binary__ = __webpack_require__(/*! Binary/Binary */ 11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Audio_AudioManager__ = __webpack_require__(/*! Audio/AudioManager */ 4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_Core_Pool__ = __webpack_require__(/*! Core/Pool */ 14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_web_audio_daw__ = __webpack_require__(/*! web-audio-daw */ 42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_web_audio_daw__ = __webpack_require__(/*! web-audio-daw */ 41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_web_audio_daw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_web_audio_daw__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Core_Deferred__ = __webpack_require__(/*! Core/Deferred */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_Core_Dom__ = __webpack_require__(/*! Core/Dom */ 7);
@@ -1991,7 +1991,7 @@ function newObject(Obj) {
         var def = new __WEBPACK_IMPORTED_MODULE_4_Core_Deferred__["a" /* default */](),
             gp = this.resources[gpName];
 
-        __WEBPACK_IMPORTED_MODULE_0_Binary_Binary__["a" /* default */].getArrayBuffer((document.location.href.match('warpdesign.fr') ? '/gods/' : '/') + res.elt.dataUrl).then(function (arrayBuffer) {
+        __WEBPACK_IMPORTED_MODULE_0_Binary_Binary__["a" /* default */].getArrayBuffer((document.location.href.match('warpdesign.fr') ? '/gods/' : '') + res.elt.dataUrl).then(function (arrayBuffer) {
             res.elt.buffer = arrayBuffer;
             res.loaded = true;
             _this3._resLoaded(gpName);
@@ -7215,7 +7215,7 @@ function flush() {
 function attemptVertx() {
   try {
     var r = require;
-    var vertx = __webpack_require__(/*! vertx */ 45);
+    var vertx = __webpack_require__(/*! vertx */ 43);
     vertxNext = vertx.runOnLoop || vertx.runOnContext;
     return useVertxTimer();
   } catch (e) {
@@ -8238,7 +8238,7 @@ return Promise;
 })));
 //# sourceMappingURL=es6-promise.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 41), __webpack_require__(/*! ./../../webpack/buildin/global.js */ 44)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 40), __webpack_require__(/*! ./../../webpack/buildin/global.js */ 42)))
 
 /***/ }),
 /* 23 */
@@ -8345,7 +8345,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Audio_AudioManager__ = __webpack_require__(/*! Audio/AudioManager */ 4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Notification_NotificationManager__ = __webpack_require__(/*! Notification/NotificationManager */ 10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_Input_InputManager__ = __webpack_require__(/*! Input/InputManager */ 9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_fpscounter__ = __webpack_require__(/*! fpscounter */ 40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_fpscounter__ = __webpack_require__(/*! fpscounter */ 39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_fpscounter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_fpscounter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Core_Dom__ = __webpack_require__(/*! Core/Dom */ 7);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -11330,8 +11330,7 @@ var Scene = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Scene);
 
 /***/ }),
-/* 39 */,
-/* 40 */
+/* 39 */
 /* unknown exports provided */
 /* exports used: default */
 /*!*********************************************!*\
@@ -11522,7 +11521,7 @@ var Scene = function () {
 module.exports = fpscounter;
 
 /***/ }),
-/* 41 */
+/* 40 */
 /* unknown exports provided */
 /* all exports used */
 /*!******************************!*\
@@ -11717,7 +11716,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /* unknown exports provided */
 /* exports used: default */
 /*!**************************************!*\
@@ -15547,8 +15546,7 @@ return Wad;
 
 
 /***/ }),
-/* 43 */,
-/* 44 */
+/* 42 */
 /* unknown exports provided */
 /* all exports used */
 /*!***********************************!*\
@@ -15580,7 +15578,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 45 */
+/* 43 */
 /* unknown exports provided */
 /* all exports used */
 /*!***********************!*\
@@ -15591,7 +15589,7 @@ module.exports = g;
 /* (ignored) */
 
 /***/ }),
-/* 46 */
+/* 44 */
 /* unknown exports provided */
 /* all exports used */
 /*!***********************************!*\
