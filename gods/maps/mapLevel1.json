@@ -11,7 +11,7 @@
     "name": "level1",
     "startX": 125,
     "startY": 448,
-    "dataUrl": "gods/maps/data/mapLevel1.bin",
+    "dataUrl": "https://raw.githubusercontent.com/AthenaJS/athenajs-gods/gh-pages/gods/maps/data/mapLevel1.bin",
     "map": null,
     "objects": null,
     "triggers": {
