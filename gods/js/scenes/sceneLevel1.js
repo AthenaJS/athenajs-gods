@@ -6,7 +6,7 @@ class godsLevel1 extends Scene {
     constructor() {
         super({
             name: 'level1',
-            hudScene: sceneHud,
+            /*hudScene: sceneHud,*/
             resources: [
                 // images
                 {
@@ -211,7 +211,9 @@ class godsLevel1 extends Scene {
 
         AM.play('restart');
 
-        this.hudScene.setOpacity(0);
+        if (this.hudScene) {
+            this.hudScene.setOpacity(0);
+        }
         this.setOpacity(1);
 
         this.animate('Mosaic', {
