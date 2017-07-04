@@ -6,7 +6,7 @@ class godsLevel1 extends Scene {
     constructor() {
         super({
             name: 'level1',
-            /*hudScene: sceneHud,*/
+            hudScene: sceneHud,
             resources: [
                 // images
                 {

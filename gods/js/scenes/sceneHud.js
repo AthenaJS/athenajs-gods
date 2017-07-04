@@ -60,6 +60,10 @@ class GodsHudScene extends Scene {
 
     // we listen for player hit, points,...
     onEvent(event) {
+        if (!this.running) {
+            return;
+        }
+        
         if (event.type === 'player:hit') {
             this.lifeMetter.updateMetterHeight(event.data.damage);
         } else if (event.type === 'player:death') {
