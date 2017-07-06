@@ -64,7 +64,7 @@
                     "id": 1,
                     "status": true
                 }
-            ]            
+            ]
         },
         "541": {
             "type": "explosion",
@@ -82,7 +82,7 @@
                 }
             ]
         },
-        "469":{
+        "469": {
             "type": "message",
             "message": "Welcome to Gods HTML remake\nYou need to get the knife first"
         },
@@ -102,7 +102,7 @@
                     "direction": "Right"
                 }
             },
-            "delay": 1300            
+            "delay": 1300
         },
         "471": {
             "type": "cp"
@@ -111,1110 +111,1109 @@
     "windows": {
         "0": {
             "displayed": false,
-            "items": [{
-                "type": "Gem",
-                "trigger": false,
-                "spriteOptions": {
-                    "x": 80,
-                    "y": 300
-                }
-            },
-            {
-                "type": "GodsSprite",
-                "trigger": false,
-                "spriteOptions": {
-                    "master": true,
-                    "x": 125,
-                    "y": 448
-                }
-            },
-            {
-                "type": "SmallItem",
-                "trigger": false,
-                "spriteOptions": {
-                    "x": 576,
-                    "y": 460,
-                    "data": {
-                        "itemType": "knife",
-                        "fall": true
+            "items": [
+                {
+                    "type": "Gem",
+                    "trigger": false,
+                    "spriteOptions": {
+                        "x": 80,
+                        "y": 300
+                    }
+                },
+                {
+                    "type": "GodsSprite",
+                    "trigger": false,
+                    "spriteOptions": {
+                        "master": true,
+                        "x": 125,
+                        "y": 448
+                    }
+                },
+                {
+                    "type": "SmallItem",
+                    "trigger": false,
+                    "spriteOptions": {
+                        "x": 576,
+                        "y": 460,
+                        "data": {
+                            "itemType": "knife",
+                            "fall": true
+                        }
+                    }
+                },
+                {
+                    "type": "SmallItem",
+                    "trigger": false,
+                    "spriteOptions": {
+                        "x": 356,
+                        "y": 460,
+                        "data": {
+                            "itemType": "help",
+                            "message": "Get the knife",
+                            "fall": true
+                        }
+                    }
+                },
+                {
+                    "type": "SpearWood",
+                    "trigger": false,
+                    "itemId": 1,
+                    "spriteOptions": {
+                        "x": 886,
+                        "y": 512,
+                        "data": {
+                            "damage": 50
+                        }
+                    }
+                },
+                {
+                    "type": "SpearWood",
+                    "trigger": false,
+                    "itemId": 2,
+                    "spriteOptions": {
+                        "x": 928,
+                        "y": 512,
+                        "data": {
+                            "damage": 50
+                        }
+                    }
+                },
+                {
+                    "type": "Switch",
+                    "trigger": false,
+                    "spriteOptions": {
+                        "objectId": 1,
+                        "x": 832,
+                        "y": 416,
+                        "data": {}
                     }
                 }
-            },
-            {
-                "type": "SmallItem",
-                "trigger": false,
-                "spriteOptions": {
-                    "x": 356,
-                    "y": 460,
-                    "data": {
-                        "itemType": "help",
-                        "message": "Get the knife",
-                        "fall": true
-                    }
-                }
-            },
-            {
-                "type": "SpearWood",
-                "trigger": false,
-                "itemId": 1,
-                "spriteOptions": {
-                    "x": 886,
-                    "y": 512,
-                    "data": {
-                        "damage": 50
-                    }
-                }
-            },
-            {
-                "type": "SpearWood",
-                "trigger": false,
-                "itemId": 2,
-                "spriteOptions": {
-                    "x": 928,
-                    "y": 512,
-                    "data": {
-                        "damage": 50
-                    }
-                }
-            },
-            {
-                "type": "Switch",
-                "trigger": false,
-                "spriteOptions": {
-                    "objectId": 1,
-                    "x": 832,
-                    "y": 416,
-                    "data": {
-
-                    }
-                }
-            }            
-        ]}
+            ]
+        }
     },
-    "sprites": [
-    ],
+    "sprites": [],
     "tiles": [
         {
             "offsetX": 122,
             "offsetY": 199,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 199,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 56,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 122,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 254,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 320,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 386,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 452,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 518,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 584,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 650,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 716,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 782,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 848,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 914,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 980,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1046,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1112,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1178,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1244,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1310,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1376,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1442,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1508,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1574,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1640,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1706,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1772,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1838,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1904,
             "offsetY": 233,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 56,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 122,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 254,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 320,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 386,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 452,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 518,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 584,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 650,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 716,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 782,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 848,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 914,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 980,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1046,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1112,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1178,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1244,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1310,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1376,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1442,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1508,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1574,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1640,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1706,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1772,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1838,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1904,
             "offsetY": 267,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 56,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 122,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 254,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 320,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 386,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 452,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 518,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 584,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 650,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 716,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 782,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 848,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 914,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 980,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1046,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1112,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1178,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1244,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1310,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1376,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1442,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1508,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1574,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1640,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1706,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1772,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1838,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1904,
             "offsetY": 301,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 56,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 122,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 254,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 320,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 386,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 452,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 518,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 584,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 650,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 716,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 782,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 848,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 914,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 980,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1046,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1112,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1178,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1244,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1310,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1376,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1442,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1508,
             "offsetY": 335,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 56,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 122,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 254,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 320,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 386,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 452,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 518,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 584,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 650,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 716,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 782,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 848,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 914,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 980,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1046,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1112,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1178,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1244,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1310,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1376,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1442,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 1508,
             "offsetY": 369,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 56,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 122,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 188,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 254,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 320,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 386,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 452,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 518,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 584,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 650,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         },
         {
             "offsetX": 716,
             "offsetY": 403,
             "width": 64,
             "height": 32,
-            "canWalk": 0		
+            "canWalk": 0
         }
     ]
 }

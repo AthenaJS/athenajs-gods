@@ -74,7 +74,7 @@ class SceneIntro extends Scene {
             endValue: 1,
             duration: 1000
         }).then(() => {
-            setTimeout(()=> {
+            setTimeout(() => {
                 this.animate('Fade', {
                     startValue: 1,
                     endValue: 0,
@@ -82,7 +82,7 @@ class SceneIntro extends Scene {
                 }).then(() => {
                     console.log('fade ended');
                     this.notify('game:startGame');
-                });                
+                });
             }, 2000);
         });
 
@@ -94,7 +94,7 @@ class SceneIntro extends Scene {
         super.stop();
     }
 
-    debug() {}
+    debug() { }
     run() {
         //                var rotate = this.menuObject.getAngle();
         super.run();
