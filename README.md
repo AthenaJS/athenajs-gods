@@ -34,3 +34,9 @@ This will install dependencies, build gods and start a development server at `ht
 
  - teleporters
  - enemy IA: enemies should be able to follow the user
+
+## License
+
+Copyright (c) Nicolas Ramz.
+
+Licensed under the [MIT](LICENSE) License.
