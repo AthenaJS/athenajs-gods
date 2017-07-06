@@ -10,18 +10,18 @@ class GodsHudScene extends Scene {
         super({
             name: 'godsHud',
             resources: [{
-                    id: 'objects',
-                    type: 'image',
-                    src: 'gods/img/gods_objects.png'
-                },
-                // objects
-                // { id: 'life_metter', type: 'script', src: 'gods/js/sprites/LifeMetter.js' },
-                // { id: 'life_metter_mask', type: 'script', src: 'gods/js/sprites/LifeMetterMask.js' },
-                {
-                    id: 'font',
-                    type: 'image',
-                    src: 'gods/img/bitmapFont.png'
-                },
+                id: 'objects',
+                type: 'image',
+                src: 'gods/img/gods_objects.png'
+            },
+            // objects
+            // { id: 'life_metter', type: 'script', src: 'gods/js/sprites/LifeMetter.js' },
+            // { id: 'life_metter_mask', type: 'script', src: 'gods/js/sprites/LifeMetterMask.js' },
+            {
+                id: 'font',
+                type: 'image',
+                src: 'gods/img/bitmapFont.png'
+            },
                 // { id: 'BitmapFont', type: 'script', src: 'gods/js/sprites/BitmapFont.js' }
             ]
         });
@@ -63,7 +63,7 @@ class GodsHudScene extends Scene {
         if (!this.running) {
             return;
         }
-        
+
         if (event.type === 'player:hit') {
             this.lifeMetter.updateMetterHeight(event.data.damage);
         } else if (event.type === 'player:death') {

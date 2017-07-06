@@ -8,7 +8,7 @@ import { Game, Dom } from 'athenajs';
    scripts when using Webpack we tell it to add every sprite to our build.
  */
 var req = require.context("sprites/", false, /^(.*\.(js$))[^.]*$/igm);
-req.keys().forEach(function(key){
+req.keys().forEach(function (key) {
     req(key);
 });
 
@@ -20,7 +20,7 @@ class GodsClass extends Game {
         this.currentLevel = -1;
 
         /* debug stuff */
-		this.moveMouseCb = this.moveInspector.bind(this);
+        this.moveMouseCb = this.moveInspector.bind(this);
     }
 
     onEvent(event) {
@@ -42,8 +42,8 @@ class GodsClass extends Game {
         }
     }
 
-	toggleTileInspector() {
-		if (this.scene.map && this.scene.map.isDebug) {
+    toggleTileInspector() {
+        if (this.scene.map && this.scene.map.isDebug) {
             if (!this.tileInspector) {
                 this.tileInspector = new Dom('div').css({
                     border: '1px dotted white',
@@ -54,27 +54,27 @@ class GodsClass extends Game {
                     'z-index': 10,
                     position: 'absolute',
                     'pointer-events': 'none'
-                }).appendTo(this.target);                
+                }).appendTo(this.target);
             }
-			this.tileInspector.show();
-			this.target.addEventListener('mousemove', this.moveMouseCb, false);
-		} else {
-			this.target.removeEventListener('mousemove', this.moveMouseCb);
-			this.tileInspector.hide();
-		}
-	}
+            this.tileInspector.show();
+            this.target.addEventListener('mousemove', this.moveMouseCb, false);
+        } else {
+            this.target.removeEventListener('mousemove', this.moveMouseCb);
+            this.tileInspector.hide();
+        }
+    }
 
-	moveInspector(event) {
-		console.log(event.offsetX, event.offsetY);
+    moveInspector(event) {
+        console.log(event.offsetX, event.offsetY);
         const map = this.scene.map;
         const offsetX = event.offsetX > 0 ? event.offsetX : 0;
         const offsetY = event.offsetY > 0 ? event.offsetY : 0;
         const pos = map.getTilePos(offsetX, offsetY);
-        this.tileInspector.html(`${pos.x}, ${pos.y}<br />Type: ${map.tileTypes[pos.x+pos.y * map.numCols]}`).css({
+        this.tileInspector.html(`${pos.x}, ${pos.y}<br />Type: ${map.tileTypes[pos.x + pos.y * map.numCols]}`).css({
             left: (pos.x * map.tileWidth) + 'px',
             top: (pos.y * map.tileHeight) + 'px'
         });
-	}
+    }
 };
 
 window.Gods = new GodsClass({
