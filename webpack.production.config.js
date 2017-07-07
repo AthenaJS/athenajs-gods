@@ -16,7 +16,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader?presets[]=es2015',
-                exclude: /node_modules|athenajs\.js/
+                exclude: /node_modules|athena\.js/
             }
         ]
     },
