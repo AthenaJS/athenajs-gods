@@ -77,7 +77,7 @@ class GodsClass extends Game {
     }
 };
 
-window.Gods = new GodsClass({
+window.gods = new GodsClass({
     debug: false,
     name: 'Gods',
     target: '.main',
@@ -87,37 +87,34 @@ window.Gods = new GodsClass({
     sound: true
 });
 
-window.Gods.onReady(function () {
-    this.setScene(sceneIntro);
-    //this.setScene(sceneLevel1);
+gods.setScene(sceneIntro);
 
-    // debug stuff
-    document.body.addEventListener('keyup', (event) => {
-        if (event.keyCode === 68) {
-            console.log('debug');
-            // scene debug
-            this.scene.debug();
-            this.toggleTileInspector();
-        }
-        if (event.keyCode === 82) {
-            this.scene.stop();
+// debug stuff
+document.body.addEventListener('keyup', (event) => {
+    if (event.keyCode === 68) {
+        console.log('debug');
+        // scene debug
+        gods.scene.debug();
+        gods.toggleTileInspector();
+    }
+    if (event.keyCode === 82) {
+        gods.scene.stop();
 
-            this.scene.resume();
-        }
+        gods.scene.resume();
+    }
 
-        if (event.keyCode === 80) {
-            this.togglePauseGame();
-        }
+    if (event.keyCode === 80) {
+        gods.togglePauseGame();
+    }
 
-        if (event.keyCode === 83) {
-            this.toggleSound(!that.sound);
-        }
+    if (event.keyCode === 83) {
+        gods.toggleSound(!gods.sound);
+    }
 
-        if (event.keyCode === 72) {
-            if (this.scene.hudScene) {
-                var opacity = this.scene.hudScene.getOpacity();
-                this.scene.hudScene.setOpacity(opacity ? 0 : 1);
-            }
+    if (event.keyCode === 72) {
+        if (gods.scene.hudScene) {
+            var opacity = gods.scene.hudScene.getOpacity();
+            gods.scene.hudScene.setOpacity(opacity ? 0 : 1);
         }
-    });
+    }
 });
