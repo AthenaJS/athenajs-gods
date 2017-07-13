@@ -21,7 +21,7 @@ module.exports = {
                 exclude: /node_modules|athena\.js/
             },
             {
-                test: /athenajs\.js$/,
+                test: /athena\.js$/,
                 use: ["source-map-loader"],
                 enforce: "pre"
             }
