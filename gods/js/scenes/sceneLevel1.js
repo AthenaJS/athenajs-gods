@@ -195,7 +195,7 @@ class godsLevel1 extends Scene {
         this.pauseText.hide();
         super.unpause();
     }
-    start(doNotResetMap) {
+    start() {
         Input.clearEvents();
 
         Input.installKeyCallback('ESCAPE', 'up', () => {
@@ -224,7 +224,9 @@ class godsLevel1 extends Scene {
             easing: 'linear'
         });
 
-        super.start(doNotResetMap);
+        this.map.reset();
+
+        super.start();
 
         /*                this.pauseText = new Text('pause', {
                     text: 'P A U S E',
