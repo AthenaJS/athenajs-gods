@@ -40,7 +40,7 @@ class GodsHudScene extends Scene {
         this.money = 0;
         this.weapon = null;
     }
-    reset() {
+    resetEnergy() {
         // runtime
         this.energy = this.maxEnergy;
     }
@@ -81,7 +81,9 @@ class GodsHudScene extends Scene {
 
     start() {
         console.log('[sceneHud] Starting Scene!');
-        this.reset();
+        super.start();
+
+        this.resetEnergy();
 
         this.addHudElements();
     }

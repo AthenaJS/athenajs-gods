@@ -214,6 +214,7 @@ class godsLevel1 extends Scene {
         if (this.hudScene) {
             this.hudScene.setOpacity(0);
         }
+
         this.setOpacity(1);
 
         this.animate('Mosaic', {
