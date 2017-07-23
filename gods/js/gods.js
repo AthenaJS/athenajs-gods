@@ -31,7 +31,7 @@ class GodsClass extends Game {
 
             case 'game:startGame':
                 debugger;
-                this.setScene(sceneLevel1);
+                this.setScene(sceneLevel1, true);
                 break;
 
             case 'game:gameover':

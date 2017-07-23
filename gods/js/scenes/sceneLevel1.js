@@ -195,7 +195,7 @@ class godsLevel1 extends Scene {
         this.pauseText.hide();
         super.unpause();
     }
-    start() {
+    start(resetMap) {
         Input.clearEvents();
 
         Input.installKeyCallback('ESCAPE', 'up', () => {
@@ -224,9 +224,7 @@ class godsLevel1 extends Scene {
             easing: 'linear'
         });
 
-        this.map.reset();
-
-        super.start();
+        super.start(resetMap);
 
         /*                this.pauseText = new Text('pause', {
                     text: 'P A U S E',
@@ -239,7 +237,6 @@ class godsLevel1 extends Scene {
         //     y: 490
         // }));
 
-        // var text = require('sprites/BitmapFont').default;
         var text = RM.getResourceById('BitmapFont');
 
         this.pauseText = new text('infoTxt', {
