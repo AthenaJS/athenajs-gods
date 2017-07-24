@@ -18,9 +18,6 @@ class GodsClass extends Game {
         super(options);
         // intro
         this.currentLevel = -1;
-
-        /* debug stuff */
-        this.moveMouseCb = this.moveInspector.bind(this);
     }
 
     onEvent(event) {
@@ -41,44 +38,10 @@ class GodsClass extends Game {
                 break;
         }
     }
-
-    toggleTileInspector() {
-        if (this.scene.map && this.scene.map.isDebug) {
-            if (!this.tileInspector) {
-                this.tileInspector = new Dom('div').css({
-                    border: '1px dotted white',
-                    'background-color': 'rgba(0,0,0,.7)',
-                    color: 'white',
-                    width: `${this.scene.map.tileWidth}px`,
-                    height: `${this.scene.map.tileHeight}px`,
-                    'z-index': 10,
-                    position: 'absolute',
-                    'pointer-events': 'none'
-                }).appendTo(this.target);
-            }
-            this.tileInspector.show();
-            this.target.addEventListener('mousemove', this.moveMouseCb, false);
-        } else {
-            this.target.removeEventListener('mousemove', this.moveMouseCb);
-            this.tileInspector.hide();
-        }
-    }
-
-    moveInspector(event) {
-        console.log(event.offsetX, event.offsetY);
-        const map = this.scene.map;
-        const offsetX = event.offsetX > 0 ? event.offsetX : 0;
-        const offsetY = event.offsetY > 0 ? event.offsetY : 0;
-        const pos = map.getTilePos(offsetX, offsetY);
-        this.tileInspector.html(`${pos.x}, ${pos.y}<br />Type: ${map.tileTypes[pos.x + pos.y * map.numCols]}`).css({
-            left: (pos.x * map.tileWidth) + 'px',
-            top: (pos.y * map.tileHeight) + 'px'
-        });
-    }
 };
 
 window.gods = new GodsClass({
-    debug: false,
+    debug: true,
     name: 'Gods',
     target: '.main',
     showFps: true,
@@ -91,12 +54,6 @@ gods.setScene(sceneIntro);
 
 // debug stuff
 document.body.addEventListener('keyup', (event) => {
-    if (event.keyCode === 68) {
-        console.log('debug');
-        // scene debug
-        gods.scene.debug();
-        gods.toggleTileInspector();
-    }
     if (event.keyCode === 82) {
         gods.scene.stop();
 
