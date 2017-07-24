@@ -272,10 +272,6 @@ class godsLevel1 extends Scene {
 
         super.stop();
     }
-
-    debug() {
-        this.map.debug(!this.map.isDebug);
-    }
 };
 
 export default new godsLevel1();
