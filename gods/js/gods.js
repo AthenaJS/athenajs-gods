@@ -54,11 +54,11 @@ gods.setScene(sceneIntro);
 
 // debug stuff
 document.body.addEventListener('keyup', (event) => {
-    if (event.keyCode === 82) {
-        gods.scene.stop();
+    // if (event.keyCode === 82) {
+    //     gods.scene.stop();
 
-        gods.scene.resume();
-    }
+    //     gods.scene.resume();
+    // }
 
     if (event.keyCode === 80) {
         gods.togglePauseGame();
