@@ -1,10 +1,4 @@
 import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
-// import Scene from 'Scene/Scene';
-// import Text from 'Object/Text';
-// import Sprite from 'Object/Sprite';
-// import Menu from 'Object/Menu';
-// import AM from 'Audio/AudioManager';
-// import Input from 'Input/InputManager';
 
 console.log(Scene, Text, Sprite, Menu, AM, Input);
 
@@ -27,7 +21,7 @@ class SceneIntro extends Scene {
                 }
             ]
         });
-        console.log('retur super sceneIntro');
+        console.log('retour super sceneIntro');
     }
 
     onLoad() {
@@ -92,12 +86,6 @@ class SceneIntro extends Scene {
     stop() {
         Input.clearEvents();
         super.stop();
-    }
-
-    debug() { }
-    run() {
-        //                var rotate = this.menuObject.getAngle();
-        super.run();
     }
 };
 
