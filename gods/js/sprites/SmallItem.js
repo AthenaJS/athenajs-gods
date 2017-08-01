@@ -141,7 +141,7 @@ class SmallItem extends Sprite {
                 gravity: .3,
                 vy: options.vy || 0,
                 onEnd: () => {
-                    this.moving = false;
+                    this.movable = false;
                 },
                 onGround: function () {
                     AM.play('bounce');

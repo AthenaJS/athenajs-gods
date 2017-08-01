@@ -132,7 +132,7 @@ class Gem extends Sprite {
         this.setBehavior('simplefall', {
             gravity: 0.3,
             onEnd: () => {
-                this.moving = false;
+                this.movable = false;
             },
             onGround: function () {
                 AM.play('bounce');
