@@ -245,7 +245,7 @@ class Weapon extends Sprite {
         // since _super is only defined during destroy's lifetime, we need to save a reference to call later
         var _sup = super.destroy.bind(this);
 
-        this.moving = false;
+        this.movable = false;
         this.stopAnimate();
 
         if (destroyAnimation) {

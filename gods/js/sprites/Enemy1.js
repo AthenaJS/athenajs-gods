@@ -458,7 +458,7 @@ class Enemy extends Sprite {
         AM.play('appearLeft');
 
         this.running = true;
-        this.moving = false;
+        this.movable = false;
 
         this._visible = true;
 
@@ -474,7 +474,7 @@ class Enemy extends Sprite {
     onAppeared() {
         this.appeared = true;
 
-        this.moving = true;
+        this.movable = true;
 
         this.canCollide = true;
 
@@ -497,7 +497,7 @@ class Enemy extends Sprite {
         // TODO: add an Enemy class and inherit from this class so we do not have
         // to put code for each and every enemy variant
         if (this.canCollide) {
-            this.moving = false;
+            this.movable = false;
             AM.play('explode1');
             this.canCollide = false;
 

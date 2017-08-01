@@ -137,7 +137,7 @@ class FlyingEnemy1 extends Sprite {
                 }
             },
             onEnd: () => {
-                this.moving = false;
+                this.movable = false;
             }
         });
 
