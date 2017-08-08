@@ -174,10 +174,6 @@ class godsLevel1 extends Scene {
     setup() {
         console.log('[sceneLevel1] setup()');
 
-        // super.onLoad();
-
-        // var that = this;
-
         console.log('[scene ' + this.name + '] ' + 'setup()');
 
         Input.installKeyCallback('ESCAPE', 'up', () => {
@@ -203,29 +199,19 @@ class godsLevel1 extends Scene {
         this.addObject(this.pauseText);
 
         this.bindEvents('game:restart');
-
-        // this.setMap(RM.getResourceById('mapLevel1'));
     }
 
-    pause() {
-        debugger;
-        this.pauseText.center();
-        this.pauseText.y -= 100;
-        this.pauseText.show();
-        super.pause();
+    pause(isRunning) {
+        if (!isRunning) {
+            this.pauseText.center();
+            this.pauseText.y -= 100;
+            this.pauseText.show();
+        } else {
+            this.pauseText.hide();
+        }
     }
 
-    unpause() {
-        debugger;
-        console.log('unpause');
-        this.pauseText.hide();
-        super.unpause();
-    }
     start() {
-        // Input.clearEvents();
-
-        debugger;
-
         this.setMap(new GodsMap(RM.getResourceById('mapLevel1')));
 
         AM.play('restart');
@@ -243,20 +229,8 @@ class godsLevel1 extends Scene {
             endValue: 0.3,
             easing: 'linear'
         });
-
-        // super.start(resetMap);
-
-        /*                this.pauseText = new Text('pause', {
-                    text: 'P A U S E',
-                    color: 'white',
-                    fontSize: '25px'
-                }).moveTo(200, 300).hide();*/
-
-        // this.map.addObject(new(RM.getResourceById('MovingPlatform'))({
-        //     x: 420,
-        //     y: 490
-        // }));
     }
+
     onEvent(event) {
         debugger;
         if (event.type === 'game:restart') {
@@ -265,13 +239,6 @@ class godsLevel1 extends Scene {
                 this.resume();
             }, 0);
         }
-    }
-
-    stop() {
-        debugger;
-        // Input.clearEvents();
-
-        // super.stop();
     }
 };
 
