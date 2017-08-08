@@ -652,26 +652,21 @@ class godsSprite extends Sprite {
         }, options));
     }
     reset() {
+        debugger;
         super.reset();
 
         this.lookDirection = '';
         this.currentMovement = '';
 
-        /*                setTimeout(function() {
-                            that.setBehavior('player', {
-                                vx: 2,
-                                vy: 0
-                            });
-                        }, 1000);*/
-
         this.energy = this._settings.data.maxEnergy;
-
-        // should we reset weapon here ?
-        /*                this.weapon = '';*/
 
         this.lookDirection = '';
         this.currentMovement = '';
+
         this.setAnimation('standStill');
+
+        this.canCollide = true;
+        this.visible = true;
     }
     setAnimation(name, fn, frameNum, revert) {
         // console.log('[GodsSprite] Setting animation to', name);
@@ -690,6 +685,7 @@ class godsSprite extends Sprite {
             // 2: play death animation
             // 3: onEnd, call send death
             AM.play('death');
+
             this.canCollide = false;
             this.clearMove();
             this.visible = false;

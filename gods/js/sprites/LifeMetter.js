@@ -50,14 +50,14 @@ class LifeMetter extends Sprite {
         options.y = typeof options.y !== 'undefined' ? options.y : 300;
 
         this.maxEnergy = options.maxEnergy || 10;
-    }
-    reset() {
-        var that = this;
-
-        super.reset();
 
         this.addMask();
-
+    }
+    /**
+     * Resets the sprite to its default (start) state: full energy => mask.height == 0
+     */
+    reset() {
+        debugger;
         this.currentMovement = '';
         this.setAnimation('mainLoop');
 
@@ -74,6 +74,10 @@ class LifeMetter extends Sprite {
 
         this.addChild(this.maskSprite);
     }
+    resetEnergy() {
+        this.maskSprite.height = 0;
+    }
+
     updateMetterHeight(hitPoints) {
         // TODO: this should be animated (inside lifeMetterMask ?)
         var maskSprite = this.maskSprite,

@@ -39,10 +39,13 @@ class GodsHudScene extends Scene {
         this.points = 0;
         this.money = 0;
         this.weapon = null;
+
+        this.lifeSprites = [];
     }
     resetEnergy() {
-        // runtime
         this.energy = this.maxEnergy;
+        // back to full energy
+        this.lifeMetter.resetEnergy();
     }
 
     setOptions(options) {
@@ -51,12 +54,6 @@ class GodsHudScene extends Scene {
         this.messages = options.messages || [];
         this.maxEnergy = options.maxEnergy || 10;
         this.maxLives = options.maxLives || 10;
-    }
-
-    unpause() {
-        debugger;
-        console.log('unpause');
-        super.unpause();
     }
 
     // we listen for player hit, points,...
@@ -74,6 +71,8 @@ class GodsHudScene extends Scene {
                 console.log('notify lost live');
                 this.notify('game:restart');
             }
+            // hide one life sprite
+            this.lifeSprites[this.lives].visible = false;
         } else if (event.type === 'game:message') {
             // console.log('sceneHud: got message', event.data.message);
             this.info.setText(event.data.message);
@@ -88,8 +87,8 @@ class GodsHudScene extends Scene {
 
         // this.addHudElements();
     }
+
     setup() {
-        debugger;
         /*
         var LifeMetter = require("sprites/LifeMetter").default,
             Lives = require('sprites/SmallItem').default;
@@ -97,6 +96,7 @@ class GodsHudScene extends Scene {
         var LifeMetter = RM.getResourceById('LifeMetter'),
             Lives = RM.getResourceById('SmallItem');
 
+        debugger;
         // add life metter
         this.lifeMetter = new LifeMetter({
             x: 32,
@@ -107,14 +107,15 @@ class GodsHudScene extends Scene {
         this.addObject(this.lifeMetter);
 
         // add lives
-        for (var i = 0; i < this.lives - 1; i++) {
-            this.addObject(new Lives({
+        for (var i = 0; i < this.lives; i++) {
+            this.lifeSprites.push(new Lives({
                 data: {
                     itemType: 'life',
                 },
                 x: 31 * i,
                 y: 0
-            }));
+            }))
+            this.addObject(this.lifeSprites[i]);
         }
 
         // add info element
@@ -134,13 +135,6 @@ class GodsHudScene extends Scene {
 
         this.addObject(this.info);
 
-    }
-    stop() {
-        debugger;
-        console.log('stop');
-        /*                Input.clearEvents();*/
-
-        super.stop();
     }
 };
 

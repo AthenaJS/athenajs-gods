@@ -234,10 +234,13 @@ class godsLevel1 extends Scene {
     onEvent(event) {
         debugger;
         if (event.type === 'game:restart') {
-            setTimeout(() => {
-                this.stop();
-                this.resume();
-            }, 0);
+            // TODO: check that 
+            this.map.respawn();
+            this.hudScene.resetEnergy();
+            // setTimeout(() => {
+            //     this.stop();
+            //     this.resume();
+            // }, 0);
         }
     }
 };
