@@ -60,11 +60,6 @@ document.body.addEventListener('keyup', (event) => {
     //     gods.scene.resume();
     // }
 
-    if (event.keyCode === 80) {
-        debugger;
-        gods.togglePauseGame();
-    }
-
     if (event.keyCode === 83) {
         gods.toggleSound(!gods.sound);
     }
