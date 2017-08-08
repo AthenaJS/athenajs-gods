@@ -28,7 +28,7 @@ class GodsClass extends Game {
 
             case 'game:startGame':
                 debugger;
-                this.setScene(sceneLevel1, true);
+                this.setScene(sceneLevel1);
                 break;
 
             case 'game:gameover':
@@ -61,6 +61,7 @@ document.body.addEventListener('keyup', (event) => {
     // }
 
     if (event.keyCode === 80) {
+        debugger;
         gods.togglePauseGame();
     }
 
