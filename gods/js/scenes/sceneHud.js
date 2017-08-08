@@ -54,6 +54,7 @@ class GodsHudScene extends Scene {
     }
 
     unpause() {
+        debugger;
         console.log('unpause');
         super.unpause();
     }
@@ -80,14 +81,15 @@ class GodsHudScene extends Scene {
     }
 
     start() {
-        console.log('[sceneHud] Starting Scene!');
-        super.start();
+        // console.log('[sceneHud] Starting Scene!');
+        // super.start();
 
         this.resetEnergy();
 
-        this.addHudElements();
+        // this.addHudElements();
     }
-    addHudElements() {
+    setup() {
+        debugger;
         /*
         var LifeMetter = require("sprites/LifeMetter").default,
             Lives = require('sprites/SmallItem').default;
@@ -125,8 +127,7 @@ class GodsHudScene extends Scene {
             x: 300,
             y: 640,
             scrollOffsetX: 0,
-            scrollOffsetY: 0,
-            text: ''
+            scrollOffsetY: 0
         });
 
         // info.visible = false;
@@ -135,6 +136,7 @@ class GodsHudScene extends Scene {
 
     }
     stop() {
+        debugger;
         console.log('stop');
         /*                Input.clearEvents();*/
 

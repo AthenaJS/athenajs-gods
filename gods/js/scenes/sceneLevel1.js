@@ -171,43 +171,62 @@ class godsLevel1 extends Scene {
         });
     }
 
-    onLoad() {
-        console.log('[sceneLevel1] onLoad');
+    setup() {
+        console.log('[sceneLevel1] setup()');
 
-        super.onLoad();
+        // super.onLoad();
 
-        var that = this;
+        // var that = this;
 
-        console.log('[scene ' + this.name + '] ' + 'onLoad');
+        console.log('[scene ' + this.name + '] ' + 'setup()');
 
-        this.setMap(new GodsMap(RM.getResourceById('mapLevel1')));
+        Input.installKeyCallback('ESCAPE', 'up', () => {
+            // Input.clearEvents();
+
+            this.fadeOut(2000).then(() => {
+                this.notify('game:exitLevel');
+            });
+        });
+
+        var text = RM.getResourceById('BitmapFont');
+
+        this.pauseText = new text('infoTxt', {
+            size: 'big',
+            w: 180,
+            h: 32,
+            visible: false,
+            scrollOffsetX: 0,
+            scrollOffsetY: 0,
+            text: 'pause'
+        });
+
+        this.addObject(this.pauseText);
+
+        this.bindEvents('game:restart');
 
         // this.setMap(RM.getResourceById('mapLevel1'));
     }
 
     pause() {
+        debugger;
+        this.pauseText.center();
+        this.pauseText.y -= 100;
         this.pauseText.show();
         super.pause();
     }
 
     unpause() {
+        debugger;
         console.log('unpause');
         this.pauseText.hide();
         super.unpause();
     }
-    start(resetMap) {
-        Input.clearEvents();
+    start() {
+        // Input.clearEvents();
 
-        Input.installKeyCallback('ESCAPE', 'up', () => {
-            Input.clearEvents();
+        debugger;
 
-            this.animate('Fade', {
-                startValue: 1,
-                endValue: 0
-            }).then(() => {
-                this.notify('game:exitLevel');
-            });
-        });
+        this.setMap(new GodsMap(RM.getResourceById('mapLevel1')));
 
         AM.play('restart');
 
@@ -225,7 +244,7 @@ class godsLevel1 extends Scene {
             easing: 'linear'
         });
 
-        super.start(resetMap);
+        // super.start(resetMap);
 
         /*                this.pauseText = new Text('pause', {
                     text: 'P A U S E',
@@ -237,28 +256,9 @@ class godsLevel1 extends Scene {
         //     x: 420,
         //     y: 490
         // }));
-
-        var text = RM.getResourceById('BitmapFont');
-
-        this.pauseText = new text('infoTxt', {
-            size: 'big',
-            w: 180,
-            h: 32,
-            visible: false,
-            scrollOffsetX: 0,
-            scrollOffsetY: 0,
-            text: 'pause'
-        });
-
-        this.addObject(this.pauseText);
-
-        this.pauseText.center();
-
-        this.pauseText.y -= 100;
-
-        this.bindEvents('game:restart');
     }
     onEvent(event) {
+        debugger;
         if (event.type === 'game:restart') {
             setTimeout(() => {
                 this.stop();
@@ -268,9 +268,10 @@ class godsLevel1 extends Scene {
     }
 
     stop() {
-        Input.clearEvents();
+        debugger;
+        // Input.clearEvents();
 
-        super.stop();
+        // super.stop();
     }
 };
 

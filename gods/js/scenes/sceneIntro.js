@@ -24,11 +24,12 @@ class SceneIntro extends Scene {
         console.log('retour super sceneIntro');
     }
 
-    onLoad() {
-        super.onLoad();
-        var that = this;
+    setup() {
+        // this.setBackgroundImage('gods/img/godsIntro.jpg');
+        // super.onLoad();
+        // var that = this;
 
-        console.log('[scene ' + this.name + '] ' + 'onLoad');
+        console.log('[scene ' + this.name + '] ' + 'setup');
 
         this.titleScreen = new Sprite('intro', {
             imageSrc: 'intro',
@@ -48,13 +49,15 @@ class SceneIntro extends Scene {
                 }
             }
         });
+
+        this.addObject(this.titleScreen);
     }
     start() {
-        super.start();
+        // super.start();
 
-        var that = this;
+        // var that = this;
 
-        Input.clearEvents();
+        // *** Input.clearEvents();
 
         /*
         Input.installKeyCallback('ENTER', 'up', () => {
@@ -63,30 +66,21 @@ class SceneIntro extends Scene {
 
         AM.play('restart');
 
-        this.animate('Fade', {
-            startValue: 0,
-            endValue: 1,
-            duration: 1000
-        }).then(() => {
-            setTimeout(() => {
-                this.animate('Fade', {
-                    startValue: 1,
-                    endValue: 0,
-                    duration: 1000
-                }).then(() => {
-                    console.log('fade ended');
-                    this.notify('game:startGame');
-                });
-            }, 2000);
+        this.fadeInAndOut(1000, 2000, 1000).then(() => {
+            this.notify('game:startGame');
         });
-
-        this.addObject(this.titleScreen);
+        // this.fadeIn(1000, 2000).then(() => {
+        //     this.fadeOut(1000).then(() => {
+        //         console.log('fade ended');
+        //         this.notify('game:startGame');
+        //     });
+        // });
     }
 
-    stop() {
-        Input.clearEvents();
-        super.stop();
-    }
+    // stop() {
+    //     Input.clearEvents();
+    //     super.stop();
+    // }
 };
 
 console.log('end sceneIntro');

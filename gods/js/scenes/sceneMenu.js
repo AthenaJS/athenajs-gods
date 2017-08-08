@@ -31,13 +31,6 @@ class sceneMenu extends Scene {
         }).moveTo(350, 250);
     }
 
-    onLoad() {
-        super.onLoad();
-
-        var that = this;
-
-        console.log('[scene ' + this.name + '] ' + 'onLoad');
-    }
     start() {
         super.start();
 
