@@ -51,45 +51,41 @@ class LifeMetter extends Sprite {
 
         this.maxEnergy = options.maxEnergy || 10;
 
-        this.addMask();
+        // this.addMask();
     }
     /**
      * Resets the sprite to its default (start) state: full energy => mask.height == 0
      */
     reset() {
-        debugger;
         this.currentMovement = '';
         this.setAnimation('mainLoop');
+        this.maskHeight = 0;
 
         this.running = true;
     }
-    addMask() {
-        // var MetterMask = require('sprites/LifeMetterMask').default;
-        var MetterMask = RM.getResourceById('LifeMetterMask');
 
-        this.maskSprite = new MetterMask({
-            x: this.x,
-            y: this.y + 12
-        });
-
-        this.addChild(this.maskSprite);
-    }
     resetEnergy() {
-        this.maskSprite.height = 0;
+        this.setEnergyMask(0);
+    }
+
+    setEnergyMask(height) {
+        this.maskHeight = height;
+        this.setMask({ x: 13, y: 12, w: 22, h: height }, true);
     }
 
     updateMetterHeight(hitPoints) {
         // TODO: this should be animated (inside lifeMetterMask ?)
-        var maskSprite = this.maskSprite,
-            height = maskSprite.height;
+        let height = this.maskHeight;
 
-        maskSprite.height += 2 * hitPoints;
+        height += 2 * hitPoints;
 
-        if (maskSprite.height > 24) {
-            maskSprite.height = 24;
-        } else if (maskSprite.height <= 0) {
-            maskSprite.height = 0;
+        if (height > 24) {
+            height = 24;
+        } else if (height <= 0) {
+            height = 0;
         }
+
+        this.setEnergyMask(height);
 
         /*                maskSprite.animate('Custom', {
                             duration: 400,
