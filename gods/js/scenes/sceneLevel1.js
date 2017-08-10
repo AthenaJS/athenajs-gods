@@ -237,6 +237,7 @@ class godsLevel1 extends Scene {
             // TODO: check that 
             this.map.respawn();
             this.hudScene.resetEnergy();
+            AM.play('restart');
             // setTimeout(() => {
             //     this.stop();
             //     this.resume();
