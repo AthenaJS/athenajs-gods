@@ -4,7 +4,6 @@ var path = require('path'),
 
 module.exports = {
     entry: [
-        'webpack-dev-server/client?http://127.0.0.1:8888',
         './gods/js/gods.js'
     ],
     output: {
@@ -49,7 +48,8 @@ module.exports = {
         new WebpackNotifierPlugin({
             alwaysNotify: true,
             skipFirstNotification: true,
-            title: 'AthenaJS-Gods'
+            title: 'AthenaJS-Gods',
+            contentImage: path.join(__dirname, './gods/img/godsIntro.jpg')
         })
     ]
 };
