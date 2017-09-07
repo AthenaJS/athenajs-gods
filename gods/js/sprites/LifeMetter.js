@@ -6,7 +6,7 @@ class LifeMetter extends Sprite {
         // options = options || {};
 
         super('lifemetter', {
-            imageSrc: 'objects',
+            imageId: 'objects',
             x: options.x,
             y: options.y,
             pool: options.pool,

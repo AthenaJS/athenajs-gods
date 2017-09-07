@@ -4,7 +4,7 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
 class DeathExplosion extends Sprite {
     constructor(options) {
         super('death_explosion', {
-            imageSrc: 'enemies',
+            imageId: 'enemies',
             x: options.x,
             y: options.y,
             pool: options.pool,

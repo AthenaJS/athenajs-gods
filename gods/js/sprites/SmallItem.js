@@ -9,7 +9,7 @@ class SmallItem extends Sprite {
         // var itemType = options.data.itemType;
 
         super(options.data && options.data.itemType || '', {
-            imageSrc: 'objects',
+            imageId: 'objects',
             x: options.x,
             y: options.y,
             pool: options.pool,

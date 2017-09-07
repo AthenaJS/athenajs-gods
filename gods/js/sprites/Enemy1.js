@@ -9,7 +9,7 @@ class Enemy extends Sprite {
             canCollide: false,
             collideGroup: 1,
             canCollideFriendBullet: true,
-            imageSrc: 'enemies',
+            imageId: 'enemies',
             data: {
                 direction: 'Left',
                 health: 1,

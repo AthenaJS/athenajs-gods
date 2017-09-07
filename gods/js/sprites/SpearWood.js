@@ -8,7 +8,7 @@ import AM from 'Audio/AudioManager';
 class SpearWood extends Sprite {
     constructor(options) {
         super('spearWood', {
-            imageSrc: 'objects',
+            imageId: 'objects',
             x: options.x,
             y: options.y,
             pool: options.pool,

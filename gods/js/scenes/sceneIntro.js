@@ -32,7 +32,7 @@ class SceneIntro extends Scene {
         console.log('[scene ' + this.name + '] ' + 'setup');
 
         this.titleScreen = new Sprite('intro', {
-            imageSrc: 'intro',
+            imageId: 'intro',
             x: 0,
             y: 0,
             animations: {

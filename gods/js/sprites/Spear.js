@@ -3,7 +3,7 @@ import { Sprite, ResourceManager as RM } from 'athenajs';
 class Spear extends Sprite {
     constructor(options) {
         super('spear', {
-            imageSrc: 'objects',
+            imageId: 'objects',
             x: options.x,	// 790,
             y: options.y,	//480,
             pool: options.pool,
