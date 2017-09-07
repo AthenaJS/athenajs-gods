@@ -6,7 +6,7 @@ class EnemyExplosion extends Sprite {
         // options = options || {};
 
         super('death_explosion', {
-            imageSrc: 'enemies',
+            imageId: 'enemies',
             x: options.x,
             y: options.y,
             pool: options.pool,

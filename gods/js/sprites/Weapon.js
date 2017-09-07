@@ -9,7 +9,7 @@ class Weapon extends Sprite {
         // this.weaponType = options.data.weaponType;
 
         super('knife', {
-            imageSrc: 'enemies',
+            imageId: 'enemies',
             x: options.x,
             y: options.y,
             pool: options.pool,

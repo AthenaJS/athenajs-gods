@@ -5,7 +5,7 @@ import { Sprite, NotificationManager as NM, AudioManager as AM, ResourceManager 
 class godsSprite extends Sprite {
     constructor(options) {
         super('gods', Object.assign(true, {
-            imageSrc: 'sprites',
+            imageId: 'sprites',
             pool: options.pool,
             canCollide: true,
             // inventory stuff

@@ -3,7 +3,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 class MovingPlatform extends Sprite {
     constructor(options = {}) {
         super('movingPlatform', {
-            imageSrc: 'tiles',
+            imageId: 'tiles',
             x: options.x,
             y: options.y,
             pool: options.pool,

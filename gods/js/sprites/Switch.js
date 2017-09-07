@@ -6,7 +6,7 @@ import AM from 'Audio/AudioManager';
 class Switch extends Sprite {
     constructor(options = {}) {
         super('switch', {
-            imageSrc: 'objects',
+            imageId: 'objects',
             x: options.x,
             y: options.y,
             pool: options.pool,

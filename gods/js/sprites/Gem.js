@@ -4,7 +4,7 @@ import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 class Gem extends Sprite {
     constructor(options = {}) {
         super('gem', {
-            imageSrc: 'objects',
+            imageId: 'objects',
             x: options.x,
             y: options.y,
             pool: options.pool,

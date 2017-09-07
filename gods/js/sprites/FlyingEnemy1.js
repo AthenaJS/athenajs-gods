@@ -6,7 +6,7 @@ class FlyingEnemy1 extends Sprite {
         // options = options || {};
 
         super('flying-enemy1', {
-            imageSrc: 'enemies',
+            imageId: 'enemies',
             x: options.x,
             y: options.y,
             collideGroup: 1,
