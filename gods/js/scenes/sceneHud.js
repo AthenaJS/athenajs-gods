@@ -96,7 +96,6 @@ class GodsHudScene extends Scene {
         var LifeMetter = RM.getResourceById('LifeMetter'),
             Lives = RM.getResourceById('SmallItem');
 
-        debugger;
         // add life metter
         this.lifeMetter = new LifeMetter({
             x: 32,

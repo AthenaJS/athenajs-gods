@@ -652,7 +652,6 @@ class godsSprite extends Sprite {
         }, options));
     }
     reset() {
-        debugger;
         super.reset();
 
         this.lookDirection = '';
