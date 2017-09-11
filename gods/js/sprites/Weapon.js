@@ -225,7 +225,7 @@ class Weapon extends Sprite {
             startValue: options.data.direction == 'left' ? 2 * Math.PI : 0,
             endValue: options.data.direction == 'left' ? 0 : 2 * Math.PI,
             duration: 800,
-            loop: true
+            loop: Infinity
         });
 
         this.setBehavior('weapon', {
@@ -241,27 +241,27 @@ class Weapon extends Sprite {
 
         this.running = true;
     }
-    destroy(destroyAnimation) {
-        // since _super is only defined during destroy's lifetime, we need to save a reference to call later
-        var _sup = super.destroy.bind(this);
 
+    destroy(destroyAnimation) {
         this.movable = false;
-        this.stopAnimate();
+        this.stopAnimate(0);
 
         if (destroyAnimation) {
             // only call parent's super once disappear animation has been played
-            this.setAnimation('disappear', function () {
-                _sup();
+            this.setAnimation('disappear', () => {
+                super.destroy();
             });
             this.playSound('weapon_crash');
         } else {
             super.destroy();
         }
     }
+
     onCollision(sprite) {
         this.canCollide = false;
         this.destroy();
     }
+
     reset() {
         super.reset();
 
