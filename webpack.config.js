@@ -34,7 +34,6 @@ module.exports = {
     },
     resolve: {
         modules: [
-            path.resolve('./gods/js'),
             'node_modules'
         ]
 

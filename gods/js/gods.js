@@ -1,13 +1,13 @@
-import sceneIntro from 'scenes/sceneIntro';
-import sceneLevel1 from 'scenes/sceneLevel1';
-import sceneMenu from 'scenes/sceneMenu';
+import sceneIntro from './scenes/sceneIntro';
+import sceneLevel1 from './scenes/sceneLevel1';
+import sceneMenu from './scenes/sceneMenu';
 
 import { Game, Dom } from 'athenajs';
 
 /* Automatically append every sprite files to the Gods build: since there's no way to dynamically load
    scripts when using Webpack we tell it to add every sprite to our build.
  */
-var req = require.context("sprites/", false, /^(.*\.(js$))[^.]*$/igm);
+var req = require.context("./sprites/", false, /^(.*\.(js$))[^.]*$/igm);
 req.keys().forEach(function (key) {
     req(key);
 });
