@@ -1,6 +1,6 @@
 import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input, ResourceManager as RM } from 'athenajs';
-import GodsMap from 'maps/GodsMap';
-import sceneHud from 'scenes/sceneHud';
+import GodsMap from '../maps/GodsMap';
+import sceneHud from './sceneHud';
 
 class godsLevel1 extends Scene {
     constructor() {

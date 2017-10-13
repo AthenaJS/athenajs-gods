@@ -1,6 +1,4 @@
-import RM from 'ResourceManager';
-import MapEvent from 'MapEvent';
-import Sprite from 'Sprite';
+import { MapEvent } from 'athenajs';
 
 class GodsMapEvent extends MapEvent {
     constructor(map) {
