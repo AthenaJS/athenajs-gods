@@ -1,6 +1,12 @@
 {
     "compilerOptions": {
         "target": "es2016",
-        "module": "es6"
+        "module": "es6",
+        "baseUrl": ".",
+        "paths": {
+            "athenajs": [
+                "./node_modules/athenajs/js/athena-module"
+            ]
+        }
     }
 }
