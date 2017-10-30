@@ -22,8 +22,8 @@ class SmallItem extends Sprite {
                     frames: [{
                         offsetX: options.data && items[options.data.itemType].x,
                         offsetY: options.data && items[options.data.itemType].y,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 13,
                             y: 14,// 3,
@@ -39,8 +39,8 @@ class SmallItem extends Sprite {
                     frames: [{
                         offsetX: 272,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -52,8 +52,8 @@ class SmallItem extends Sprite {
                     {
                         offsetX: 306,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -65,8 +65,8 @@ class SmallItem extends Sprite {
                     {
                         offsetX: 340,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -78,8 +78,8 @@ class SmallItem extends Sprite {
                     {
                         offsetX: 374,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -91,8 +91,8 @@ class SmallItem extends Sprite {
                     {
                         offsetX: 408,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -104,8 +104,8 @@ class SmallItem extends Sprite {
                     {
                         offsetX: 442,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -117,8 +117,8 @@ class SmallItem extends Sprite {
                     {
                         offsetX: 476,
                         offsetY: 114,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,

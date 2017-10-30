@@ -41,8 +41,8 @@ class SceneIntro extends Scene {
                     frames: [{
                         offsetX: 0,
                         offsetY: 0,
-                        w: 1024,
-                        h: 768,
+                        width: 1024,
+                        height: 768,
                         hitBox: {}
                     }],
                     loop: 0

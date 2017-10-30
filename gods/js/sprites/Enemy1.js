@@ -21,8 +21,8 @@ class Enemy extends Sprite {
                     frames: [{
                         offsetX: 594,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -34,8 +34,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 660,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -47,8 +47,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 726,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -60,8 +60,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 792,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -73,8 +73,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 858,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -86,8 +86,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 924,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -99,8 +99,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 990,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -112,8 +112,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 1056,
                         offsetY: 562,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -130,8 +130,8 @@ class Enemy extends Sprite {
                     frames: [{
                         offsetX: 1122,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -143,8 +143,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 1056,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -156,8 +156,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 990,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -169,8 +169,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 924,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -182,8 +182,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 858,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -195,8 +195,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 792,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -208,8 +208,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 726,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -221,8 +221,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 660,
                         offsetY: 628,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 6,
                             y: 0,
@@ -238,8 +238,8 @@ class Enemy extends Sprite {
                     frames: [{
                         offsetX: 594,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -251,8 +251,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 660,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -264,8 +264,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 726,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -277,8 +277,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 792,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -290,8 +290,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 858,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -303,8 +303,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 924,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -316,8 +316,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 990,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -329,8 +329,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 1056,
                         offsetY: 694,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -346,8 +346,8 @@ class Enemy extends Sprite {
                     frames: [{
                         offsetX: 594,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -359,8 +359,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 660,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -372,8 +372,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 726,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -385,8 +385,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 792,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -398,8 +398,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 858,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -411,8 +411,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 924,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -424,8 +424,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 990,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -437,8 +437,8 @@ class Enemy extends Sprite {
                     {
                         offsetX: 1056,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,

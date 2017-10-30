@@ -15,120 +15,120 @@ class DeathExplosion extends Sprite {
                     frames: [{
                         offsetX: 396,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 462,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 528,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 594,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 660,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 726,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 792,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 858,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 924,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 990,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1056,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1122,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1188,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1254,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1320,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1386,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 1452,
                         offsetY: 298,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     }],
                     loop: 0

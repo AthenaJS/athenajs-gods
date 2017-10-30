@@ -30,8 +30,8 @@ class FlyingEnemy1 extends Sprite {
                     frames: [{
                         offsetX: 198,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -43,8 +43,8 @@ class FlyingEnemy1 extends Sprite {
                     {
                         offsetX: 264,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -56,8 +56,8 @@ class FlyingEnemy1 extends Sprite {
                     {
                         offsetX: 330,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -73,8 +73,8 @@ class FlyingEnemy1 extends Sprite {
                     frames: [{
                         offsetX: 132,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -86,8 +86,8 @@ class FlyingEnemy1 extends Sprite {
                     {
                         offsetX: 66,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -99,8 +99,8 @@ class FlyingEnemy1 extends Sprite {
                     {
                         offsetX: 0,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         hitBox: {
                             x: 0,
                             y: 0,

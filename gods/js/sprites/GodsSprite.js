@@ -37,8 +37,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 396,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -54,8 +54,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 396,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -66,8 +66,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 988,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -83,8 +83,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 396,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -95,8 +95,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 464,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -112,8 +112,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 199,
                         offsetY: 99,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -129,8 +129,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 530,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -141,8 +141,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 726,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -153,8 +153,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 792,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -170,8 +170,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 302,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -182,8 +182,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 230,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -194,8 +194,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 166,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -213,8 +213,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 200,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 2,
                             y: 4,
@@ -225,8 +225,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 264,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 2,
                             y: 4,
@@ -237,8 +237,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 328,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 2,
                             y: 4,
@@ -249,8 +249,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 392,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 2,
                             y: 4,
@@ -267,8 +267,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 0,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -279,8 +279,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 66,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -291,8 +291,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 132,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -309,8 +309,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 132,
                         offsetY: 0,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -321,8 +321,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 66,
                         offsetY: 0,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -333,8 +333,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 0,
                         offsetY: 0,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 1,
                             y: 4,
@@ -351,8 +351,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 100,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -368,8 +368,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 858,
                         offsetY: 100,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -385,8 +385,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 464,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 2,
                             y: 20,
@@ -397,8 +397,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 530,
                         offsetY: 98,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 2,
                             y: 20,
@@ -415,8 +415,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 384,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 10,
                             y: 20,
@@ -427,8 +427,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 318,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 10,
                             y: 20,
@@ -445,8 +445,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 528,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -457,8 +457,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 594,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -469,8 +469,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 660,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -481,8 +481,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 726,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -493,8 +493,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 792,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -505,8 +505,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 858,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -517,8 +517,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 924,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -529,8 +529,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 990,
                         offsetY: 2,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -548,8 +548,8 @@ class godsSprite extends Sprite {
                     frames: [{
                         offsetX: 924,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -560,8 +560,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 858,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -572,8 +572,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 792,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -584,8 +584,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 726,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -596,8 +596,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 660,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -608,8 +608,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 594,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -620,8 +620,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 528,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,
@@ -632,8 +632,8 @@ class godsSprite extends Sprite {
                     }, {
                         offsetX: 464,
                         offsetY: 298,
-                        w: 64,
-                        h: 96,
+                        width: 64,
+                        height: 96,
                         hitBox: {
                             x: 3,
                             y: 1,

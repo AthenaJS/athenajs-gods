@@ -16,29 +16,29 @@ class LifeMetter extends Sprite {
                     frames: [{
                         offsetX: 136,
                         offsetY: 227,
-                        w: 48,
-                        h: 48,
+                        width: 48,
+                        height: 48,
                         plane: 0
                     },
                     {
                         offsetX: 202,
                         offsetY: 227,
-                        w: 48,
-                        h: 48,
+                        width: 48,
+                        height: 48,
                         plane: 0
                     },
                     {
                         offsetX: 268,
                         offsetY: 227,
-                        w: 48,
-                        h: 48,
+                        width: 48,
+                        height: 48,
                         plane: 0
                     },
                     {
                         offsetX: 334,
                         offsetY: 227,
-                        w: 48,
-                        h: 48,
+                        width: 48,
+                        height: 48,
                         plane: 0
                     }],
                     loop: 1
@@ -70,7 +70,7 @@ class LifeMetter extends Sprite {
 
     setEnergyMask(height) {
         this.maskHeight = height;
-        this.setMask({ x: 13, y: 12, w: 22, h: height }, true);
+        this.setMask({ x: 13, y: 12, width: 22, height: height }, true);
     }
 
     updateMetterHeight(hitPoints) {
