@@ -15,8 +15,8 @@ class MovingPlatform extends Sprite {
                     frames: [{
                         offsetX: 1244,
                         offsetY: 335,
-                        w: 130,
-                        h: 32,
+                        width: 130,
+                        height: 32,
                         hitBox: {
                             x: 0,
                             y: 0,

@@ -14,8 +14,8 @@ class Spear extends Sprite {
                     frames: [{
                         offsetX: 0,
                         offsetY: 227,
-                        w: 32,
-                        h: 32,
+                        width: 32,
+                        height: 32,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -27,8 +27,8 @@ class Spear extends Sprite {
                     {
                         offsetX: 34,
                         offsetY: 227,
-                        w: 32,
-                        h: 32,
+                        width: 32,
+                        height: 32,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -40,8 +40,8 @@ class Spear extends Sprite {
                     {
                         offsetX: 68,
                         offsetY: 227,
-                        w: 32,
-                        h: 32,
+                        width: 32,
+                        height: 32,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -53,8 +53,8 @@ class Spear extends Sprite {
                     {
                         offsetX: 102,
                         offsetY: 227,
-                        w: 32,
-                        h: 32,
+                        width: 32,
+                        height: 32,
                         hitBox: {
                             x: 0,
                             y: 0,

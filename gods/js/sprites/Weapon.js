@@ -23,8 +23,8 @@ class Weapon extends Sprite {
                 knife_left: {
                     frameDuration: 1,
                     frames: [{
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         offsetX: 0,
                         offsetY: 221,
                         hitBox: {
@@ -40,8 +40,8 @@ class Weapon extends Sprite {
                 knife_right: {
                     frameDuration: 1,
                     frames: [{
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         offsetX: 33,
                         offsetY: 221,
                         hitBox: {
@@ -59,8 +59,8 @@ class Weapon extends Sprite {
                     frames: [{
                         offsetX: 0,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -72,8 +72,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 34,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -85,8 +85,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 68,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -98,8 +98,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 102,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -111,8 +111,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 136,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -124,8 +124,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 170,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -137,8 +137,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 204,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -150,8 +150,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 238,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -163,8 +163,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 272,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -176,8 +176,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 306,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -189,8 +189,8 @@ class Weapon extends Sprite {
                     {
                         offsetX: 340,
                         offsetY: 262,
-                        w: 32,
-                        h: 30,
+                        width: 32,
+                        height: 30,
                         hitBox: {
                             x: 0,
                             y: 0,

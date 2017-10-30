@@ -122,8 +122,8 @@ class GodsHudScene extends Scene {
         var Text = RM.getResourceById('BitmapFont');
 
         this.info = new Text('infoTxt', {
-            w: 400,
-            h: 18,
+            width: 400,
+            height: 18,
             x: 300,
             y: 640,
             scrollOffsetX: 0,

@@ -17,50 +17,50 @@ class EnemyExplosion extends Sprite {
                     frames: [{
                         offsetX: 594,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 660,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 726,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 792,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 858,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 924,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     },
                     {
                         offsetX: 990,
                         offsetY: 364,
-                        w: 64,
-                        h: 64,
+                        width: 64,
+                        height: 64,
                         plane: 0
                     }],
                     loop: 0

@@ -188,8 +188,8 @@ class godsLevel1 extends Scene {
 
         this.pauseText = new text('infoTxt', {
             size: 'big',
-            w: 180,
-            h: 32,
+            width: 180,
+            height: 32,
             visible: false,
             scrollOffsetX: 0,
             scrollOffsetY: 0,

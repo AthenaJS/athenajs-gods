@@ -26,8 +26,8 @@ class Gem extends Sprite {
                     frames: [{
                         offsetX: 136,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -39,8 +39,8 @@ class Gem extends Sprite {
                     {
                         offsetX: 170,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -52,8 +52,8 @@ class Gem extends Sprite {
                     {
                         offsetX: 204,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -65,8 +65,8 @@ class Gem extends Sprite {
                     {
                         offsetX: 238,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -78,8 +78,8 @@ class Gem extends Sprite {
                     {
                         offsetX: 272,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -91,8 +91,8 @@ class Gem extends Sprite {
                     {
                         offsetX: 306,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
@@ -104,8 +104,8 @@ class Gem extends Sprite {
                     {
                         offsetX: 340,
                         offsetY: 189,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,

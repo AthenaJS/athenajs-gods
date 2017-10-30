@@ -21,8 +21,8 @@ class SpearWood extends Sprite {
                     frames: [{
                         offsetX: 0,
                         offsetY: 258,
-                        w: 31,
-                        h: 31,
+                        width: 31,
+                        height: 31,
                         hitBox: {
                             x: 0,
                             y: 0,
