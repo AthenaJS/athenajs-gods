@@ -69,9 +69,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -551,9 +551,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -563,9 +563,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -575,9 +575,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -587,9 +587,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -599,9 +599,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -611,9 +611,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -623,9 +623,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
@@ -635,9 +635,9 @@ class godsSprite extends Sprite {
                         width: 64,
                         height: 96,
                         hitBox: {
-                            x: 3,
+                            x: 1,
                             y: 1,
-                            x2: 60,
+                            x2: 62,
                             y2: 95
                         },
                         plane: 0
