@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
+import { Scene, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
 
 class sceneMenu extends Scene {
     constructor() {

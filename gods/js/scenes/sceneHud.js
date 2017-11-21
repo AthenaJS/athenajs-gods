@@ -118,7 +118,7 @@ class GodsHudScene extends Scene {
         }
 
         // add info element
-        // var Text = require('sprites/BitmapFont').default;
+        // var SimpleText = require('sprites/BitmapFont').default;
         var Text = RM.getResourceById('BitmapFont');
 
         this.info = new Text('infoTxt', {
