@@ -1,4 +1,4 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input, ResourceManager as RM } from 'athenajs';
+import { Scene, Sprite, Menu, AudioManager as AM, InputManager as Input, ResourceManager as RM } from 'athenajs';
 import GodsMap from '../maps/GodsMap';
 import sceneHud from './sceneHud';
 

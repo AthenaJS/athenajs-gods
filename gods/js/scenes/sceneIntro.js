@@ -1,6 +1,6 @@
-import { Scene, Text, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
+import { Scene, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
 
-console.log(Scene, Text, Sprite, Menu, AM, Input);
+console.log(Scene, Sprite, Menu, AM, Input);
 
 class SceneIntro extends Scene {
     constructor() {
