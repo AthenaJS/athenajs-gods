@@ -29,6 +29,6 @@
     "dependencies": {
         "es6-promise": "4.1.0",
         "whatwg-fetch": "2.0.3",
-        "athenajs": "0.0.4"
+        "athenajs": "0.1.0"
     }
 }
