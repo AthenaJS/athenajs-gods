@@ -20,7 +20,17 @@
             "size": 1,
             "spriteId": "Enemy1",
             "afterDestroy": "reward",
-            "afterDestroyData": "apple",
+            "afterDestroyData": {
+                "spriteId": "SmallItem",
+                "spriteOptions": {
+                    "x": "+24",
+                    "y": "+20",
+                    "vy": -2,
+                    "data": {
+                        "itemType": "apple"
+                    }
+                }
+            },
             "spriteOptions": {
                 "x": 65,
                 "y": 480,
@@ -37,7 +47,17 @@
             "size": 2,
             "spriteId": "Enemy1",
             "afterDestroy": "reward",
-            "afterDestroyData": "apple",
+            "afterDestroyData": {
+                "spriteId": "SmallItem",
+                "spriteOptions": {
+                    "x": "+24",
+                    "y": "+20",
+                    "vy": -2,
+                    "data": {
+                        "itemType": "apple"
+                    }
+                }
+            },
             "spriteOptions": {
                 "x": 704,
                 "y": 319,
@@ -91,7 +111,17 @@
             "size": 1,
             "spriteId": "Enemy1",
             "afterDestroy": "reward",
-            "afterDestroyData": "apple",
+            "afterDestroyData": {
+                "spriteId": "SmallItem",
+                "spriteOptions": {
+                    "x": "+24",
+                    "y": "-20",
+                    "vy": -2,
+                    "data": {
+                        "itemType": "apple"
+                    }
+                }
+            },
             "spriteOptions": {
                 "x": 129,
                 "y": 480,
