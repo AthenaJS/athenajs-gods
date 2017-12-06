@@ -501,11 +501,6 @@ class Enemy extends Sprite {
             AM.play('explode1');
             this.canCollide = false;
 
-            // group stuff
-            if (this.wave) {
-                this.wave.remove(this);
-            }
-
             this.setAnimation('explosion', function () {
                 this.destroy();
             });
