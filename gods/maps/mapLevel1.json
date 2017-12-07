@@ -24,7 +24,7 @@
                 "spriteId": "SmallItem",
                 "spriteOptions": {
                     "x": "+24",
-                    "y": "+20",
+                    "y": "-20",
                     "vy": -2,
                     "data": {
                         "itemType": "apple"
@@ -51,7 +51,7 @@
                 "spriteId": "SmallItem",
                 "spriteOptions": {
                     "x": "+24",
-                    "y": "+20",
+                    "y": "-20",
                     "vy": -2,
                     "data": {
                         "itemType": "apple"
