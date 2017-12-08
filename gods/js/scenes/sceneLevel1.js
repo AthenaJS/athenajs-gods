@@ -172,10 +172,6 @@ class godsLevel1 extends Scene {
     }
 
     setup() {
-        console.log('[sceneLevel1] setup()');
-
-        console.log('[scene ' + this.name + '] ' + 'setup()');
-
         Input.installKeyCallback('ESCAPE', 'up', () => {
             // Input.clearEvents();
 
@@ -234,7 +230,7 @@ class godsLevel1 extends Scene {
     onEvent(event) {
         debugger;
         if (event.type === 'game:restart') {
-            // TODO: check that 
+            // TODO: check that
             this.map.respawn();
             this.hudScene.resetEnergy();
             AM.play('restart');
