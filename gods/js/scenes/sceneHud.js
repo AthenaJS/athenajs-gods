@@ -1,7 +1,7 @@
 import { Scene, Pool, ResourceManager as RM } from 'athenajs';
 /*
 import Scene from 'Scene/Scene';
-import Pool from 'Core/Pool';
+import Pool from 'Util/Pool';
 import ResourceManager from 'Resource/ResourceManager';
 */
 
