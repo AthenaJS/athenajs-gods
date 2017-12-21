@@ -35,6 +35,10 @@ This will install dependencies, build gods and start a development server at `ht
  - teleporters
  - enemy IA: enemies should be able to follow the user
 
+## Credits
+
+Sounds & Graphics are ripped from the original Amiga [Gods](http://hol.abime.net/2754) game by [The Bitmap Brothers](https://en.wikipedia.org/wiki/The_Bitmap_Brothers) and were borrowed from Jotd's [Gods Deluxe](http://jotd.pagesperso-orange.fr/gods/) remake
+
 ## License
 
 Copyright (c) Nicolas Ramz.

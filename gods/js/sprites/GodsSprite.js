@@ -737,7 +737,7 @@ class godsSprite extends Sprite {
             case 'knife':
                 // TODO: change weapon
                 // TODO: play sound ?
-                console.log('need to catch knife');
+                console.log('[GodsSprite] Need to catch knife');
                 this.weapon = 'weapon';
                 AM.play('take_bonus');
                 // this.weapon = 'knife';
