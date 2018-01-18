@@ -197,7 +197,7 @@ class godsLevel1 extends Scene {
         this.bindEvents('game:restart');
     }
 
-    pause(isRunning) {
+    onPause(isRunning) {
         if (!isRunning) {
             this.pauseText.center();
             this.pauseText.y -= 100;
