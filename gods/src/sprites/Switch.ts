@@ -4,7 +4,9 @@ import Sprite from 'Object/Sprite';
 import AM from 'Audio/AudioManager';
 */
 class Switch extends Sprite {
-    constructor(options = {}) {
+    isActivated: boolean;
+
+    constructor(options = { x: 0, y: 0, pool: undefined, isActivated: false, objectId: '', data: {} }) {
         super('switch', {
             imageId: 'objects',
             x: options.x,
@@ -67,7 +69,7 @@ class Switch extends Sprite {
 
         this.setAnimationFromSwitch();
 
-        AM.play('leverActivated', this.soundRef);
+        AM.play('leverActivated');
     }
     reset() {
         super.reset();
@@ -81,6 +83,6 @@ class Switch extends Sprite {
     }
 };
 
-RM.registerScript('Switch', Switch);
+// RM.registerScript('Switch', Switch);
 
 export default Switch;

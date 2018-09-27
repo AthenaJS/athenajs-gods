@@ -1,7 +1,7 @@
-import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
+import { Sprite, AudioManager as AM, ResourceManager as RM, Drawable, JSObject } from 'athenajs';
 
 class SmallItem extends Sprite {
-    constructor(options = {}) {
+    constructor(options = { x: 0, y: 0, pool: undefined, vy: 0, data:{itemType: '', fall:false}}) {
         // if (options.pool) {
         //     return;
         // }
@@ -160,7 +160,7 @@ class SmallItem extends Sprite {
             super.destroy();
         });
     }
-    onCollision(sprite) {
+    onCollision(sprite:Drawable) {
         this.canCollide = false;
     }
     reset() {
@@ -171,7 +171,7 @@ class SmallItem extends Sprite {
     }
 };
 
-var items = {
+const items:JSObject = {
     'knife': {
         x: 456,
         y: 37
@@ -190,6 +190,6 @@ var items = {
     }
 };
 
-RM.registerScript('SmallItem', SmallItem);
+// RM.registerScript('SmallItem', SmallItem);
 
 export default SmallItem;

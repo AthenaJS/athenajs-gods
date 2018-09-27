@@ -1,12 +1,15 @@
-import { Scene, Sprite, Menu, AudioManager as AM, InputManager as Input, ResourceManager as RM } from 'athenajs';
+import { Scene, AudioManager as AM, GameEvent, BitmapText, InputManager as Input, ResourceManager as RM } from 'athenajs';
 import GodsMap from '../maps/GodsMap';
-import sceneHud from './sceneHud';
+import GodsHudScene from './SceneHud';
 
-class godsLevel1 extends Scene {
+class GodsLevel1 extends Scene {
+    pauseText: BitmapText;
+    hudScene: GodsHudScene;
+
     constructor() {
         super({
             name: 'level1',
-            hudScene: sceneHud,
+            hudScene: new GodsHudScene(),
             resources: [
                 // images
                 {
@@ -180,16 +183,19 @@ class godsLevel1 extends Scene {
             });
         });
 
-        var text = RM.getResourceById('BitmapFont');
-
-        this.pauseText = new text('infoTxt', {
+        this.pauseText = new BitmapText('infoTxt', {
             size: 'big',
             width: 180,
             height: 32,
             visible: false,
             scrollOffsetX: 0,
             scrollOffsetY: 0,
-            text: 'pause'
+            text: 'pause',
+            offsetX: 34,
+            startY: 36,
+            charWidth: 18,
+            charHeight: 18,
+            imageId: 'font'
         });
 
         this.addObject(this.pauseText);
@@ -197,7 +203,7 @@ class godsLevel1 extends Scene {
         this.bindEvents('game:restart');
     }
 
-    pause(isRunning) {
+    pause(isRunning:boolean) {
         if (!isRunning) {
             this.pauseText.center();
             this.pauseText.y -= 100;
@@ -227,7 +233,7 @@ class godsLevel1 extends Scene {
         });
     }
 
-    onEvent(event) {
+    onEvent(event:GameEvent) {
         debugger;
         if (event.type === 'game:restart') {
             // TODO: check that
@@ -242,4 +248,4 @@ class godsLevel1 extends Scene {
     }
 };
 
-export default new godsLevel1();
+export default GodsLevel1;

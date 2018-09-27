@@ -1,6 +1,8 @@
-import { Scene, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
+import { Scene, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
 
-class sceneMenu extends Scene {
+class SceneMenu extends Scene {
+    menuObject: Menu;
+
     constructor() {
         super({
             name: 'menu',
@@ -28,7 +30,7 @@ class sceneMenu extends Scene {
                     visible: true
                 }
             ]
-        }).moveTo(350, 250);
+        }).moveTo(350, 250) as Menu;
     }
 
     start() {
@@ -66,4 +68,4 @@ class sceneMenu extends Scene {
 };
 
 
-export default new sceneMenu();
+export default SceneMenu;

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "target": "es5",
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": [
+        "es5",
+        "es6",
+        "es2015.iterable",
+        "dom"
+    ]
+  },
+  "include": [
+    "./gods/src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

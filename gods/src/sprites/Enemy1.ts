@@ -1,8 +1,14 @@
 /*jshint esversion: 6*/
-import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
+import { Sprite, AudioManager as AM, ResourceManager as RM, SpriteOptions, Drawable } from 'athenajs';
 
 class Enemy extends Sprite {
-    constructor(options) {
+    health: number;
+    speed: number;
+    // unused ??
+    _visible: boolean;
+    appeared: boolean;
+
+    constructor(options = { x: 0, y: 0, pool: undefined }) {
         super('enemy1', Object.assign({
             x: 600,
             y: 159,
@@ -452,7 +458,7 @@ class Enemy extends Sprite {
             }
         }, options));
     }
-    reset(dir) {
+    reset() {
         super.reset();
 
         AM.play('appearLeft');
@@ -462,8 +468,8 @@ class Enemy extends Sprite {
 
         this._visible = true;
 
-        this.health = this._settings.data.health;
-        this.speed = this._settings.data.speed;
+        this.health = this.getProperty('health');
+        this.speed = this.getProperty('speed');
 
         this.currentMovement = '';
 
@@ -472,19 +478,21 @@ class Enemy extends Sprite {
 
     // called once enemy has finished apparitionAnimation
     onAppeared() {
+        const direction = this.getProperty('direction');
+
         this.appeared = true;
 
         this.movable = true;
 
         this.canCollide = true;
 
-        this.setAnimation(this._settings.data.direction === 'Left' ? 'mainLoopLeft' : 'mainLoopRight');
+        this.setAnimation(direction === 'Left' ? 'mainLoopLeft' : 'mainLoopRight');
 
         this.setBehavior('ground', {
-            vx: this._settings.data.direction === 'Left' ? -this.speed : this.speed,
+            vx: direction === 'Left' ? -this.speed : this.speed,
             vy: 0,
             gravity: 0,
-            onVXChange: (vx) => {
+            onVXChange: (vx:number) => {
                 if (vx < 0) {
                     this.setAnimation('mainLoopLeft');
                 } else {
@@ -493,7 +501,7 @@ class Enemy extends Sprite {
             }
         });
     }
-    onCollision(sprite) {
+    onCollision(sprite:Drawable) {
         // TODO: add an Enemy class and inherit from this class so we do not have
         // to put code for each and every enemy variant
         if (this.canCollide) {
@@ -508,6 +516,6 @@ class Enemy extends Sprite {
     }
 }
 
-RM.registerScript('Enemy1', Enemy);
+// RM.registerScript('Enemy1', Enemy);
 
 export default Enemy;

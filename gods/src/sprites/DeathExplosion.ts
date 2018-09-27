@@ -1,8 +1,8 @@
 /*jshint esversion: 6*/
-import { Sprite, ResourceManager as RM } from 'athenajs';
+import { Sprite, ResourceManager as RM, SpriteOptions } from 'athenajs';
 
 class DeathExplosion extends Sprite {
-    constructor(options) {
+    constructor(options:SpriteOptions) {
         super('death_explosion', {
             imageId: 'enemies',
             x: options.x,
@@ -150,7 +150,7 @@ class DeathExplosion extends Sprite {
     }
 }
 
-RM.registerScript('DeathExplosion', DeathExplosion);
+// RM.registerScript('DeathExplosion', DeathExplosion);
 
 export default DeathExplosion;
 

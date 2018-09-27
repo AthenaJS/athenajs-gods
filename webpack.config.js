@@ -4,7 +4,7 @@ var path = require('path'),
 
 module.exports = {
     entry: [
-        './gods/js/gods.js'
+        './gods/src/gods.ts'
     ],
     output: {
         path: __dirname,
@@ -12,18 +12,25 @@ module.exports = {
         pathinfo: true
     },
     devtool: 'source-map',
+    mode: 'development',
     module: {
         rules: [
             {
-                test: /\.js$/,
-                loader: 'babel-loader?presets[]=es2015',
-                exclude: /node_modules|athena\.js/
+                test: /\.(t|j)sx?$/,
+                use: {
+                    loader: 'awesome-typescript-loader'
+                }
             },
-            {
-                test: /athena\.js$/,
-                use: ["source-map-loader"],
-                enforce: "pre"
-            }
+            // {
+            //     test: /\.js$/,
+            //     loader: 'babel-loader?presets[]=es2015',
+            //     exclude: /node_modules|athena\.js/
+            // }
+            // {
+            //     test: /athena\.js$/,
+            //     use: ["source-map-loader"],
+            //     enforce: "pre"
+            // }
         ]
     },
     devServer: {
@@ -35,8 +42,8 @@ module.exports = {
     resolve: {
         modules: [
             'node_modules'
-        ]
-
+        ],
+        extensions: ['.ts', '.js']
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -1,7 +1,7 @@
 import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 class MovingPlatform extends Sprite {
-    constructor(options = {}) {
+    constructor(options = { x: 0, y: 0, map: undefined, pool:undefined}) {
         super('movingPlatform', {
             imageId: 'tiles',
             x: options.x,
@@ -39,6 +39,6 @@ class MovingPlatform extends Sprite {
     }
 };
 
-RM.registerScript('MovingPlatform', MovingPlatform);
+// RM.registerScript('MovingPlatform', MovingPlatform);
 
 export default MovingPlatform;

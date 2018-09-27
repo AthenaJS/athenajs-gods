@@ -6,7 +6,7 @@ import AM from 'Audio/AudioManager';
 */
 
 class SpearWood extends Sprite {
-    constructor(options) {
+    constructor(options = { x: 0, y: 0, pool: undefined, data: {} }) {
         super('spearWood', {
             imageId: 'objects',
             x: options.x,
@@ -36,11 +36,9 @@ class SpearWood extends Sprite {
             }
         });
 
-        var that = this;
-
         options = options || {};
 
-        this.soundRef = null;
+        // this.soundRef = null;
     }
     reset() {
         super.reset();
@@ -61,16 +59,16 @@ class SpearWood extends Sprite {
         );
     }
     destroy() {
-        if (this.soundRef) {
-            AM.stop('spike', this.soundRef);
-            this.soundRef = null;
-        }
+        // if (this.soundRef) {
+        //     AM.stop('spike', this.soundRef);
+        //     this.soundRef = null;
+        // }
 
         // do not forget to call the super method!
         super.destroy();
     }
 };
 
-RM.registerScript('SpearWood', SpearWood);
+// RM.registerScript('SpearWood', SpearWood);
 
 export default SpearWood;

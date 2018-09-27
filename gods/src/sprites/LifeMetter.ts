@@ -2,7 +2,10 @@
 import { Sprite, ResourceManager as RM } from 'athenajs';
 
 class LifeMetter extends Sprite {
-    constructor(options = {}) {
+    maxEnergy: number;
+    maskHeight: number;
+
+    constructor(options = { x:0, y: 0, maxEnergy:0, pool: undefined }) {
         // options = options || {};
 
         super('lifemetter', {
@@ -68,12 +71,12 @@ class LifeMetter extends Sprite {
         this.setEnergyMask(0);
     }
 
-    setEnergyMask(height) {
+    setEnergyMask(height:number) {
         this.maskHeight = height;
         this.setMask({ x: 13, y: 12, width: 22, height: height }, true);
     }
 
-    updateMetterHeight(hitPoints) {
+    updateMetterHeight(hitPoints:number) {
         // TODO: this should be animated (inside lifeMetterMask ?)
         let height = this.maskHeight;
 
@@ -99,6 +102,6 @@ class LifeMetter extends Sprite {
     }
 }
 
-RM.registerScript('LifeMetter', LifeMetter);
+// RM.registerScript('LifeMetter', LifeMetter);
 
 export default LifeMetter;

@@ -2,7 +2,7 @@
 import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 class EnemyExplosion extends Sprite {
-    constructor(options = {}) {
+    constructor(options = { x: 0, y: 0, maxEnergy: 0, pool: undefined }) {
         // options = options || {};
 
         super('death_explosion', {

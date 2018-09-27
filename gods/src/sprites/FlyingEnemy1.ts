@@ -2,7 +2,9 @@
 import { Sprite, ResourceManager as RM } from 'athenajs';
 
 class FlyingEnemy1 extends Sprite {
-    constructor(options = {}) {
+    dir: string;
+
+    constructor(options = {x:0, y:0, pool:undefined}) {
         // options = options || {};
 
         super('flying-enemy1', {
@@ -148,6 +150,6 @@ class FlyingEnemy1 extends Sprite {
     }
 }
 
-RM.registerScript('FlyingEnemy1', FlyingEnemy1);
+// RM.registerScript('FlyingEnemy1', FlyingEnemy1);
 
 export default FlyingEnemy1;

@@ -1,4 +1,4 @@
-import { Scene, Pool, ResourceManager as RM } from 'athenajs';
+import { Scene, BitmapText, GameEvent, ResourceManager as RM } from 'athenajs';
 /*
 import Scene from 'Scene/Scene';
 import Pool from 'Util/Pool';
@@ -6,6 +6,19 @@ import ResourceManager from 'Resource/ResourceManager';
 */
 
 class GodsHudScene extends Scene {
+    inventory: Array<any>;
+    lives: number;
+    points: number;
+    money: number;
+    weapon: string | null;
+    energy: number;
+    maxEnergy: number;
+    maxLives: number;
+    lifeMetter: any;
+    lifeSprites: any[];
+    messages: any[];
+    info: BitmapText;
+
     constructor(options = {}) {
         super({
             name: 'godsHud',
@@ -48,7 +61,7 @@ class GodsHudScene extends Scene {
         this.lifeMetter.resetEnergy();
     }
 
-    setOptions(options) {
+    setOptions(options?:any) {
         options = options || {};
 
         this.messages = options.messages || [];
@@ -57,7 +70,7 @@ class GodsHudScene extends Scene {
     }
 
     // we listen for player hit, points,...
-    onEvent(event) {
+    onEvent(event:GameEvent) {
         if (!this.running) {
             return;
         }
@@ -119,15 +132,20 @@ class GodsHudScene extends Scene {
 
         // add info element
         // var SimpleText = require('sprites/BitmapFont').default;
-        var Text = RM.getResourceById('BitmapFont');
+        // var Text = RM.getResourceById('BitmapFont');
 
-        this.info = new Text('infoTxt', {
+        this.info = new BitmapText('infoTxt', {
             width: 400,
             height: 18,
             x: 300,
             y: 640,
             scrollOffsetX: 0,
-            scrollOffsetY: 0
+            scrollOffsetY: 0,
+            offsetX: 34,
+            startY: 36,
+            charWidth: 18,
+            charHeight: 18,
+            imageId: 'font'
         });
 
         // info.visible = false;
@@ -137,4 +155,4 @@ class GodsHudScene extends Scene {
     }
 };
 
-export default new GodsHudScene();
+export default GodsHudScene;

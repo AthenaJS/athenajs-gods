@@ -1,6 +1,9 @@
-import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
+import { Sprite, ResourceManager as RM, Drawable } from 'athenajs';
 class Weapon extends Sprite {
-    constructor(options = {}) {
+    weaponType: string;
+    animName: string;
+
+    constructor(options = { x: 0, y: 0, pool: undefined, isActivated: false, objectId: '', data: {direction: '', weaponType: ''} }) {
         // options.data = Object.assign({
         //     weaponType: 'knife',
         //     direction: 'right'
@@ -232,7 +235,7 @@ class Weapon extends Sprite {
             vx: options.data.direction == 'left' ? -6 : 6,
             vy: 0,
             gravity: 0,
-            onVXChange: (vx) => {
+            onVXChange: () => {
                 this.destroy(true);
             }
         });
@@ -242,7 +245,7 @@ class Weapon extends Sprite {
         this.running = true;
     }
 
-    destroy(destroyAnimation) {
+    destroy(destroyAnimation?:boolean) {
         this.movable = false;
         this.stopAnimate(0);
 
@@ -257,7 +260,7 @@ class Weapon extends Sprite {
         }
     }
 
-    onCollision(sprite) {
+    onCollision(sprite:Drawable) {
         this.canCollide = false;
         this.destroy();
     }
@@ -271,6 +274,6 @@ class Weapon extends Sprite {
     }
 };
 
-RM.registerScript('Weapon', Weapon);
+// RM.registerScript('Weapon', Weapon);
 
 export default Weapon;

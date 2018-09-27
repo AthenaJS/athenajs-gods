@@ -1,7 +1,7 @@
 import { Sprite, ResourceManager as RM } from 'athenajs';
 
 class Spear extends Sprite {
-    constructor(options) {
+    constructor(options = { x: 0, y: 0, pool: undefined }) {
         super('spear', {
             imageId: 'objects',
             x: options.x,	// 790,
@@ -68,17 +68,15 @@ class Spear extends Sprite {
             }
         });
 
-        var that = this;
-
         options = options || {};
 
-        this.soundRef = null;
+        // this.soundRef = null;
     }
-    draw(ctx, debug) {
-        // console.log(this.woodSprite.x, this.x);
-        // this.woodSprite.draw(ctx, debug);
-        super.draw(ctx, debug);
-    }
+    // draw(ctx, debug) {
+    //     // console.log(this.woodSprite.x, this.x);
+    //     // this.woodSprite.draw(ctx, debug);
+    //     super.draw(ctx, debug);
+    // }
     reset() {
         super.reset();
 
@@ -95,6 +93,6 @@ class Spear extends Sprite {
     }
 };
 
-RM.registerScript('Spear', Spear);
+// RM.registerScript('Spear', Spear);
 
 export default Spear;

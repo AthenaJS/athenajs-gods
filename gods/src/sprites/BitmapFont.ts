@@ -1,8 +1,8 @@
 /*jshint esversion: 6*/
-import { BitmapText, ResourceManager as RM } from 'athenajs';
+import { BitmapText, BitmapTextOptions } from 'athenajs';
 
 class BitmapFont extends BitmapText {
-    constructor(type, options) {
+    constructor(type: string, options: BitmapTextOptions) {
         super(type, Object.assign(options, {
             offsetX: 34,
             startY: 36,
@@ -13,6 +13,6 @@ class BitmapFont extends BitmapText {
     }
 }
 
-RM.registerScript('BitmapFont', BitmapFont);
+// RM.registerScript('BitmapFont', BitmapFont);
 
 export default BitmapFont;

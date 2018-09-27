@@ -1,6 +1,8 @@
-import { Scene, Sprite, Menu, AudioManager as AM, InputManager as Input } from 'athenajs';
+import { Scene, Sprite, AudioManager as AM } from 'athenajs';
 
 class SceneIntro extends Scene {
+    titleScreen: Sprite;
+
     constructor() {
         super({
             name: 'intro',
@@ -53,4 +55,4 @@ class SceneIntro extends Scene {
     }
 };
 
-export default new SceneIntro();
+export default SceneIntro;

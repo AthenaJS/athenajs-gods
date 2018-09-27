@@ -1,9 +1,13 @@
 /*jshint esversion: 6*/
-import { Sprite, NotificationManager as NM, AudioManager as AM, ResourceManager as RM } from 'athenajs';
+import { Sprite, NotificationManager as NM, AudioManager as AM, ResourceManager as RM, Drawable, JSObject } from 'athenajs';
 
 // TODO: extend Sprite to create our special gods sprites here
 class godsSprite extends Sprite {
-    constructor(options) {
+    energy: number;
+    lookDirection: string;
+    weapon: string;
+
+    constructor(options = {pool:undefined}) {
         super('gods', Object.assign(true, {
             imageId: 'sprites',
             pool: options.pool,
@@ -657,7 +661,8 @@ class godsSprite extends Sprite {
         this.lookDirection = '';
         this.currentMovement = '';
 
-        this.energy = this._settings.data.maxEnergy;
+        this.energy = this.getProperty('maxEnergy');
+        //this._settings.data.maxEnergy;
 
         this.lookDirection = '';
         this.currentMovement = '';
@@ -667,13 +672,13 @@ class godsSprite extends Sprite {
         this.canCollide = true;
         this.visible = true;
     }
-    setAnimation(name, fn, frameNum, revert) {
-        // console.log('[GodsSprite] Setting animation to', name);
-        super.setAnimation(name, fn, frameNum, revert);
-    }
+    // setAnimation(name:string, fn, frameNum, revert) {
+    //     // console.log('[GodsSprite] Setting animation to', name);
+    //     super.setAnimation(name, fn, frameNum, revert);
+    // }
     explode() { }
     checkKeys() { }
-    onDamage(hitPoints) {
+    onDamage(hitPoints:number) {
         // TODO: calculate here and passe it to hit ?
         this.energy -= hitPoints;
 
@@ -714,12 +719,12 @@ class godsSprite extends Sprite {
             damage: hitPoints
         });
     }
-    onCollision(sprite) {
+    onCollision(sprite:Drawable) {
         switch (sprite.type) {
             case 'help':
                 // console.log('sending game:message');
                 NM.notify('game:message', {
-                    message: sprite._settings.data.message
+                    message: sprite.getProperty('message')
                 });
 
                 sprite.destroy();
@@ -731,7 +736,7 @@ class godsSprite extends Sprite {
             case 'flying-enemy1':
             case 'spearWood':
                 // TODO: call sprite.destroy() method (to be implemented)
-                this.onDamage(sprite._settings.data.damage);
+                this.onDamage(sprite.getProperty('damage'));
                 break;
 
             case 'knife':
@@ -750,9 +755,8 @@ class godsSprite extends Sprite {
                 // console.log('onCollision called on non-handled sprite type', sprite.type);
                 break;
         }
-        super.onCollision();
     }
-    onEvent(eventType, data) {
+    onEvent(eventType:string, data:JSObject) {
         // TODO: do we hold a weapon ?
         var result = false;
 
@@ -778,6 +782,6 @@ class godsSprite extends Sprite {
     }
 }
 
-RM.registerScript('GodsSprite', godsSprite);
+// RM.registerScript('GodsSprite', godsSprite);
 
 export default godsSprite;

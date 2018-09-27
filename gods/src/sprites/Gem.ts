@@ -2,7 +2,7 @@
 import { Sprite, AudioManager as AM, ResourceManager as RM } from 'athenajs';
 
 class Gem extends Sprite {
-    constructor(options = {}) {
+    constructor(options = { x: 0, y: 0, pool: undefined }) {
         super('gem', {
             imageId: 'objects',
             x: options.x,
@@ -146,6 +146,6 @@ class Gem extends Sprite {
     }
 }
 
-RM.registerScript('Gem', Gem);
+// RM.registerScript('Gem', Gem);
 
 export default Gem;
