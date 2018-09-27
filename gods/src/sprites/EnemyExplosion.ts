@@ -86,6 +86,6 @@ class EnemyExplosion extends Sprite {
     }
 }
 
-RM.registerScript('EnemyExplosion', EnemyExplosion);
+// RM.registerScript('EnemyExplosion', EnemyExplosion);
 
 export default EnemyExplosion;

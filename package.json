@@ -11,8 +11,9 @@
     "main": "dist/gods.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dev-server --watch",
-        "build": "webpack --config webpack.production.config.js"
+        "start": "webpack-dev-server --watch --verbose",
+        "build": "webpack --config webpack.production.config.js",
+        "build-dev": "webpack"
     },
     "devDependencies": {
         "awesome-typescript-loader": "^5.2.1",
@@ -22,6 +23,7 @@
         "happypack": "3.0.3",
         "html-webpack-plugin": "^3.2.0",
         "imports-loader": "0.7.1",
+        "jest-cli": "^23.6.0",
         "node-notifier": "5.1.2",
         "source-map-loader": "^0.2.4",
         "typescript": "^3.0.3",

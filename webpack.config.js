@@ -16,21 +16,18 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(js|map)$/,
+                use: ["source-map-loader"],
+                enforce: "pre",
+                include: /athena/
+            },
+            {
                 test: /\.(t|j)sx?$/,
                 use: {
                     loader: 'awesome-typescript-loader'
-                }
-            },
-            // {
-            //     test: /\.js$/,
-            //     loader: 'babel-loader?presets[]=es2015',
-            //     exclude: /node_modules|athena\.js/
-            // }
-            // {
-            //     test: /athena\.js$/,
-            //     use: ["source-map-loader"],
-            //     enforce: "pre"
-            // }
+                },
+                exclude: /athena/
+            }
         ]
     },
     devServer: {
@@ -40,9 +37,6 @@ module.exports = {
         inline: true
     },
     resolve: {
-        modules: [
-            'node_modules'
-        ],
         extensions: ['.ts', '.js']
     },
     plugins: [
